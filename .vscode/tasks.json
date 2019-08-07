@@ -1,0 +1,27 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build host",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "-std=c++11",
+                "-I${fileDirname}/../inc/",
+                "${fileDirname}/mlp.hpp",
+                "${fileDirname}/host.cpp",
+                "-o",
+                "${fileDirname}/../build/host"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
