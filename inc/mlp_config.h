@@ -15,6 +15,14 @@
 #include <string>
 #endif
 
+typedef int8_t dType_;
+typedef uint8_t dImage_;
+typedef int32_t dType_Reg;
+
+
+#define __QUANTIZATION__ 8 // quantize bit size
+
+dType_ power = (1 << (__QUANTIZATION__ - 1)) - 1;
 
 #define __IMG_ROWS__ 28
 #define __IMG_COLS__ 28
@@ -33,8 +41,5 @@
 
 #define __OUT_SIZE__ 10
 #define __MAX_BUFFER_SIZE__ 100 * 784
-
-typedef int8_t dType_;
-typedef int32_t dType_Reg;
 
 #endif
