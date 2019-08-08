@@ -41,6 +41,9 @@
         "tuple": "cpp",
         "typeinfo": "cpp",
         "utility": "cpp",
-        "cinttypes": "cpp"
+        "cinttypes": "cpp",
+        "cstddef": "cpp",
+        "optional": "cpp",
+        "string_view": "cpp"
     }
 }

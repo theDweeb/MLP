@@ -1,5 +1,6 @@
 #include "npy.hpp"
 #include "mlp.hpp"
+#include <fstream>
 
 int main(int argc, char **argv)
 {
@@ -34,10 +35,10 @@ int main(int argc, char **argv)
     std::vector<float> l2_b(l2_b_size_bytes);
     std::vector<unsigned long> l2_b_shape;
 
-    npy::LoadArrayFromNumpy("./test_dataset/two.npy", image_shape, image);
-    npy::LoadArrayFromNumpy("./weights/l1_w_transpose.npy", l1_w_shape, l1_w);
+    npy::LoadArrayFromNumpy("./test_dataset/image1.npy", image_shape, image);
+    npy::LoadArrayFromNumpy("./weights/weights.npy", l1_w_shape, l1_w);
     npy::LoadArrayFromNumpy("./weights/l1_b.npy", l1_b_shape, l1_b);
-    npy::LoadArrayFromNumpy("./weights/l2_w_transpose.npy", l2_w_shape, l2_w);
+    npy::LoadArrayFromNumpy("./weights/weights2.npy", l2_w_shape, l2_w);
     npy::LoadArrayFromNumpy("./weights/l2_b.npy", l2_b_shape, l2_b);
 
 #ifdef __HW__
@@ -56,6 +57,10 @@ int main(int argc, char **argv)
     std::vector<dImage_> results(results_size_bytes);
 
 #endif
+
+    std::ofstream file;
+    file.open("image.txt");
+
     // Image
     std::cout << "Image shape: " << image_shape[0] << "x" << image_shape[1] << std::endl;
     for (int i = 0; i < __IMG_ROWS__; i++)
@@ -63,10 +68,16 @@ int main(int argc, char **argv)
         for (int j = 0; j < __IMG_COLS__; j++)
         {
             image_q[(i * __IMG_COLS__) + j] = (dImage_)image[(i * __IMG_COLS__) + j];
+            file << (int)image_q[(i * __IMG_COLS__) + j] << " ";
         }
+        file << std::endl;
     }
 
+    file.close();
     // Layer 1 weights
+    int temp = 0;
+    std::ofstream l1_weights;
+    l1_weights.open("l1_weights.txt");
     std::cout << "L1 Weight shape: " << l1_w_shape[0] << "x" << l1_w_shape[1] << std::endl;
     for (int i = 0; i < __L1_COLS__; i++)
     {
@@ -80,8 +91,11 @@ int main(int argc, char **argv)
             {
                 l1_w[(i * __L1_ROWS__) + j] = 1;
             }
+            temp = (i * __L1_ROWS__) + j;
             l1_w_q[(i * __L1_ROWS__) + j] = l1_w[(i * __L1_ROWS__) + j] * 16;
+            l1_weights << l1_w_q[(i * __L1_ROWS__) + j] << " ";
         }
+        l1_weights << std::endl;
     }
 
     // Layer 1 bias

@@ -15,9 +15,9 @@
 #include <string>
 #endif
 
-typedef int8_t dType_;
-typedef uint8_t dImage_;
-typedef int32_t dType_Reg;
+typedef int dType_;
+typedef int dImage_;
+typedef int dType_Reg;
 
 
 #define __QUANTIZATION__ 8 // quantize bit size

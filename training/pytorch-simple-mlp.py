@@ -197,6 +197,11 @@ np.save('l0_b', model.fc_layer0.bias.data.numpy())
 np.save('l2_w', model.fc_layer2.weight.data.numpy())
 np.save('l2_b', model.fc_layer2.bias.data.numpy())
 
+np.savetxt('l0_w.txt', model.fc_layer0.weight.data.numpy())
+np.savetxt('l0_b.txt', model.fc_layer0.bias.data.numpy())
+np.savetxt('l2_w.txt', model.fc_layer2.weight.data.numpy())
+np.savetxt('l2_b.txt', model.fc_layer2.bias.data.numpy())
+
 fig, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, figsize=(15, 10))
 ax1.plot(mean_train_losses, label='train')
 ax1.plot(mean_valid_losses, label='valid')
