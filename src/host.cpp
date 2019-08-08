@@ -20,7 +20,7 @@ int main(int argc, char **argv)
     size_t results_size_bytes = __OUT_SIZE__;
 #endif
 
-    std::vector<dImage_> image(image_size_bytes);
+    std::vector<int> image(image_size_bytes);
     std::vector<unsigned long> image_shape;
 
     std::vector<float> l1_w(l1_w_size_bytes);
@@ -35,10 +35,10 @@ int main(int argc, char **argv)
     std::vector<float> l2_b(l2_b_size_bytes);
     std::vector<unsigned long> l2_b_shape;
 
-    npy::LoadArrayFromNumpy("./test_dataset/image1.npy", image_shape, image);
-    npy::LoadArrayFromNumpy("./weights/weights.npy", l1_w_shape, l1_w);
+    npy::LoadArrayFromNumpy("./test_dataset/zero_int.npy", image_shape, image);
+    npy::LoadArrayFromNumpy("./weights/l1_w.npy", l1_w_shape, l1_w);
     npy::LoadArrayFromNumpy("./weights/l1_b.npy", l1_b_shape, l1_b);
-    npy::LoadArrayFromNumpy("./weights/weights2.npy", l2_w_shape, l2_w);
+    npy::LoadArrayFromNumpy("./weights/l2_w.npy", l2_w_shape, l2_w);
     npy::LoadArrayFromNumpy("./weights/l2_b.npy", l2_b_shape, l2_b);
 
 #ifdef __HW__
@@ -62,7 +62,6 @@ int main(int argc, char **argv)
     file.open("image.txt");
 
     // Image
-    std::cout << "Image shape: " << image_shape[0] << "x" << image_shape[1] << std::endl;
     for (int i = 0; i < __IMG_ROWS__; i++)
     {
         for (int j = 0; j < __IMG_COLS__; j++)
@@ -76,27 +75,26 @@ int main(int argc, char **argv)
     file.close();
     // Layer 1 weights
     int temp = 0;
-    std::ofstream l1_weights;
-    l1_weights.open("l1_weights.txt");
-    std::cout << "L1 Weight shape: " << l1_w_shape[0] << "x" << l1_w_shape[1] << std::endl;
-    for (int i = 0; i < __L1_COLS__; i++)
+    file.open("l1_weights.txt");
+    for (int i = 0; i < __L1_ROWS__; i++)
     {
-        for (int j = 0; j < __L1_ROWS__; j++)
+        for (int j = 0; j < __L1_COLS__; j++)
         {
-            if (l1_w[(i * __L1_ROWS__) + j] <= -1)
+            if (l1_w[(i * __L1_COLS__) + j] <= -1)
             {
-                l1_w[(i * __L1_ROWS__) + j] = -1;
+                l1_w[(i * __L1_COLS__) + j] = -1;
             }
-            else if (l1_w[(i * __L1_ROWS__) + j] >= 1)
+            else if (l1_w[(i * __L1_COLS__) + j] >= 1)
             {
-                l1_w[(i * __L1_ROWS__) + j] = 1;
+                l1_w[(i * __L1_COLS__) + j] = 1;
             }
-            temp = (i * __L1_ROWS__) + j;
-            l1_w_q[(i * __L1_ROWS__) + j] = l1_w[(i * __L1_ROWS__) + j] * 16;
-            l1_weights << l1_w_q[(i * __L1_ROWS__) + j] << " ";
+            temp = (i * __L1_COLS__) + j;
+            l1_w_q[(i * __L1_COLS__) + j] = l1_w[(i * __L1_COLS__) + j] * 16;
+            file << (int)l1_w_q[(i * __L1_COLS__) + j] << " ";
         }
-        l1_weights << std::endl;
+        file << std::endl;
     }
+    file.close();
 
     // Layer 1 bias
     for (int i = 0; i < __L1_B__; i++)
@@ -113,22 +111,25 @@ int main(int argc, char **argv)
     }
 
     // Layer 2 weights
-    std::cout << "L2 Weight shape: " << l2_w_shape[0] << "x" << l2_w_shape[1] << std::endl;
-    for (int i = 0; i < __L2_COLS__; i++)
+    file.open("l2_weights.txt");
+    for (int i = 0; i < __L2_ROWS__; i++)
     {
-        for (int j = 0; j < __L2_ROWS__; j++)
+        for (int j = 0; j < __L2_COLS__; j++)
         {
-            if (l2_w[(i * __L2_ROWS__) + j] <= -1)
+            if (l2_w[(i * __L2_COLS__) + j] <= -1)
             {
-                l2_w[(i * __L2_ROWS__) + j] = -1;
+                l2_w[(i * __L2_COLS__) + j] = -1;
             }
-            else if (l2_w[(i * __L2_ROWS__) + j] >= 1)
+            else if (l2_w[(i * __L2_COLS__) + j] >= 1)
             {
-                l2_w[(i * __L2_ROWS__) + j] = 1;
+                l2_w[(i * __L2_COLS__) + j] = 1;
             }
-            l2_w[(i * __L2_ROWS__) + j] = l2_w[(i * __L2_ROWS__) + j] * 16;
+            l2_w_q[(i * __L2_COLS__) + j] = l2_w[(i * __L2_COLS__) + j] * 16;
+            file << (int)l2_w_q[(i * __L2_COLS__) + j] << " ";
         }
+        file << std::endl;
     }
+    file.close();
 
     // Layer 2 bias
     for (int i = 0; i < __L2_B__; i++)
@@ -149,11 +150,11 @@ int main(int argc, char **argv)
 #else
     MLP(image_q.data(), l1_w_q.data(), l1_b_q.data(), l2_w_q.data(), l2_b_q.data(), results.data());
 #endif
-    std::cout << "\tResults:" << std::endl;
+    std::cout << "Results:" << std::endl;
     std::cout << "digit\tprobability\n";
     for (int i = 0; i < __OUT_SIZE__; i++)
     {
         float result = results[i];
-        std::cout << i << "\t" << result << std::endl;
+        std::cout << i << "\t" << float((result/16)*100) << "%" << std::endl;
     }
 }
