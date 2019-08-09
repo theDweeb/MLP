@@ -35,7 +35,7 @@ int main(int argc, char **argv)
     std::vector<float> l2_b(l2_b_size_bytes);
     std::vector<unsigned long> l2_b_shape;
 
-    npy::LoadArrayFromNumpy("./test_dataset/zero_int.npy", image_shape, image);
+    npy::LoadArrayFromNumpy("./test_dataset/one.npy", image_shape, image);
     npy::LoadArrayFromNumpy("./weights/l1_w.npy", l1_w_shape, l1_w);
     npy::LoadArrayFromNumpy("./weights/l1_b.npy", l1_b_shape, l1_b);
     npy::LoadArrayFromNumpy("./weights/l2_w.npy", l2_w_shape, l2_w);
