@@ -16,6 +16,7 @@ inline void read_from_ddr(dType_ *input, dType_ buffer[__MAX_BUFFER_SIZE__], dTy
     }
 }
 
+// Not needed, kept for historical
 // void transpose(dType_ original[__L1_COLS__][__L1_COLS__], dType_ transposed[__L1_COLS__][__L1_COLS__], dType_Reg row, dType_Reg col) {
 //     int idx1 = 0;
 //     int idx2 = 0;
