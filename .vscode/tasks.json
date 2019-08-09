@@ -11,7 +11,7 @@
                 "-g",
                 "-std=c++11",
                 "-I${fileDirname}/../inc/",
-                "${fileDirname}/mlp.hpp",
+                "${fileDirname}/mlp.cpp",
                 "${fileDirname}/host.cpp",
                 "-o",
                 "${fileDirname}/../build/host"

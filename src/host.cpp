@@ -1,6 +1,9 @@
+#include "mlp.h"
 #include "npy.hpp"
-#include "mlp.hpp"
+
+#ifndef __HW__
 #include <fstream>
+#endif
 
 int main(int argc, char **argv)
 {
@@ -42,12 +45,12 @@ int main(int argc, char **argv)
     npy::LoadArrayFromNumpy("./weights/l2_b.npy", l2_b_shape, l2_b);
 
 #ifdef __HW__
-    dType_ *image_q = (dImage_)sds_alloc(image_size_bytes);
-    dType_ *l1_w_q = (dType_)sds_alloc(l1_w_size_bytes);
-    dType_ *l1_b_q = (dType_)sds_alloc(l1_b_size_bytes);
-    dType_ *l2_w_q = (dType_)sds_alloc(l2_w_size_bytes);
-    dType_ *l2_b_q = (dType_)sds_alloc(l2_b_size_bytes);
-    dType_ *results = (dImage_)sds_alloc(results_size_bytes);
+    dImage_ *image_q = (dImage_ *)sds_alloc(image_size_bytes);
+    dType_ *l1_w_q = (dType_ *)sds_alloc(l1_w_size_bytes);
+    dType_ *l1_b_q = (dType_ *)sds_alloc(l1_b_size_bytes);
+    dType_ *l2_w_q = (dType_ *)sds_alloc(l2_w_size_bytes);
+    dType_ *l2_b_q = (dType_ *)sds_alloc(l2_b_size_bytes);
+    dImage_ *results = (dImage_ *)sds_alloc(results_size_bytes);
 #else
     std::vector<dImage_> image_q(image_size_bytes);
     std::vector<dType_> l1_w_q(l1_w_size_bytes);
@@ -58,24 +61,31 @@ int main(int argc, char **argv)
 
 #endif
 
+#ifndef __HW__
     std::ofstream file;
     file.open("image.txt");
+#endif
 
-    // Image
+    // Convert image from int32 to uint8
     for (int i = 0; i < __IMG_ROWS__; i++)
     {
         for (int j = 0; j < __IMG_COLS__; j++)
         {
-            image_q[(i * __IMG_COLS__) + j] = (dImage_)image[(i * __IMG_COLS__) + j];
-            file << (int)image_q[(i * __IMG_COLS__) + j] << " ";
-        }
-        file << std::endl;
-    }
+            image_q[(i * __IMG_COLS__) + j] = image[(i * __IMG_COLS__) + j];
 
+#ifndef __HW__
+            file << (int)image_q[(i * __IMG_COLS__) + j] << " ";
+#endif
+        }
+#ifndef __HW__
+        file << std::endl;
+#endif
+    }
+#ifndef __HW__
     file.close();
-    // Layer 1 weights
-    int temp = 0;
     file.open("l1_weights.txt");
+#endif
+    // Layer 1 weights
     for (int i = 0; i < __L1_ROWS__; i++)
     {
         for (int j = 0; j < __L1_COLS__; j++)
@@ -88,14 +98,19 @@ int main(int argc, char **argv)
             {
                 l1_w[(i * __L1_COLS__) + j] = 1;
             }
-            temp = (i * __L1_COLS__) + j;
             l1_w_q[(i * __L1_COLS__) + j] = l1_w[(i * __L1_COLS__) + j] * 16;
+#ifndef __HW__
             file << (int)l1_w_q[(i * __L1_COLS__) + j] << " ";
+#endif
         }
+#ifndef __HW__
         file << std::endl;
+#endif
     }
+#ifndef __HW__
     file.close();
-
+    file.open("l2_weights.txt");
+#endif
     // Layer 1 bias
     for (int i = 0; i < __L1_B__; i++)
     {
@@ -111,7 +126,6 @@ int main(int argc, char **argv)
     }
 
     // Layer 2 weights
-    file.open("l2_weights.txt");
     for (int i = 0; i < __L2_ROWS__; i++)
     {
         for (int j = 0; j < __L2_COLS__; j++)
@@ -125,12 +139,18 @@ int main(int argc, char **argv)
                 l2_w[(i * __L2_COLS__) + j] = 1;
             }
             l2_w_q[(i * __L2_COLS__) + j] = l2_w[(i * __L2_COLS__) + j] * 16;
+#ifndef __HW__
             file << (int)l2_w_q[(i * __L2_COLS__) + j] << " ";
+#endif
         }
+#ifndef __HW__
         file << std::endl;
+#endif
     }
-    file.close();
 
+#ifndef __HW__
+    file.close();
+#endif
     // Layer 2 bias
     for (int i = 0; i < __L2_B__; i++)
     {
@@ -146,15 +166,31 @@ int main(int argc, char **argv)
     }
 
 #ifdef __HW__
-
+    MLP(image_q, l1_w_q, l1_b_q, l2_w_q, l2_b_q, results);
 #else
     MLP(image_q.data(), l1_w_q.data(), l1_b_q.data(), l2_w_q.data(), l2_b_q.data(), results.data());
-#endif
+
     std::cout << "Results:" << std::endl;
     std::cout << "digit\tprobability\n";
     for (int i = 0; i < __OUT_SIZE__; i++)
     {
         float result = results[i];
-        std::cout << i << "\t" << float((result/16)*100) << "%" << std::endl;
+        std::cout << i << "\t" << float((result / 16) * 100) << "%" << std::endl;
     }
+
+    size_t image_size = sizeof(dImage_) * __IMG_SIZE__;
+    size_t l1_w_size = sizeof(dType_) * __L1_W__;
+    size_t l1_b_size = sizeof(dType_) * __L1_B__;
+    size_t l1_output = sizeof(dImage_) * __L1_ROWS__;
+    size_t l2_w_size = sizeof(dType_) * __L2_W__;
+    size_t l2_b_size = sizeof(dType_) * __L2_B__;
+    size_t results_size = sizeof(dImage_) * __OUT_SIZE__;
+
+    float hls_size = image_size + l1_w_size + l1_output + l1_b_size + l2_w_size + l2_b_size + results_size;
+    float ultra_size = 7.6 * (1000000 / 8);
+    std::cout << "Ultra96 BRAM size: 7.6Mb" << std::endl;
+    std::cout << "MLP size: " << hls_size / 1000 << "kB" << std::endl;
+    std::cout << "Utilization: " <<( hls_size / ultra_size) * 100 << "%" << std::endl;
+
+#endif
 }
