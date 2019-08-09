@@ -22,8 +22,6 @@ typedef int32_t dType_Reg;
 
 #define __QUANTIZATION__ 8 // quantize bit size
 
-dType_ power = (1 << (__QUANTIZATION__ - 1)) - 1;
-
 #define __IMG_ROWS__ 28
 #define __IMG_COLS__ 28
 #define __IMG_CH__ 1

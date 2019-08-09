@@ -39,13 +39,26 @@
       out                    \
     : AXIDMA_SIMPLE)
 
+#pragma SDS data mem_attribute( \
+    image                       \
+    : PHYSICAL_CONTIGUOUS,      \
+      l1_w                      \
+    : PHYSICAL_CONTIGUOUS,      \
+      l1_b                      \
+    : PHYSICAL_CONTIGUOUS,      \
+      l2_w                      \
+    : PHYSICAL_CONTIGUOUS,      \
+      l2_b                      \
+    : PHYSICAL_CONTIGUOUS,      \
+      out                       \
+    : PHYSICAL_CONTIGUOUS)
+
 void MLP(
-    dType_ *image,
+    dImage_ *image,
     dType_ *l1_w,
     dType_ *l1_b,
     dType_ *l2_w,
     dType_ *l2_b,
-    dType_ *out
-);
+    dImage_ *out);
 
 #endif
