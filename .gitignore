@@ -1,5 +1,3 @@
 /build/host
 /MNIST-for-Numpy/*ubyte.gz
-image.txt
-l1_weights.txt
-l2_weights.txt
+*.txt
