@@ -1,6 +1,13 @@
 # Multilayer Perceptron
 **Ongoing project to produce synthesizable code to run on multiple FPGA's**
 
+
+[Ultra96 HLS](https://github.com/theDweeb/MLP/tree/Ultra96 "Ultra96")
+
+*TODO* Pynq Z1
+
+*TODO* ZCU102
+
 **Using Vivado HLS and/or SDx**
 
 ### Two fully connected layers to classify handwritten digits (0-9)
