@@ -1,0 +1,231 @@
+(c) Copyright 2012-2018 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2018.3 SW Build 2405991 on Thu Dec  6 23:37:15 MST 2018
+# Start time    : Wed Aug 14 15:40:15 EDT 2019
+# Command line  : sds++ -sds-pf /home/steve/Graduate_Research/MLP/Pynq-Z1/platforms/pynqZ1 -target-os linux -fPIC -Wall -shared -o mlp.so /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/pynqlib.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/host.o
+# Log file      : /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/reports/sds.log
+# Journal file  : /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/reports/sds.jou
+# Report file   : /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/reports/sds.rpt
+#-----------------------------------------------------------
+
+Libraries: 
+Library Paths {}
+Analyzing object files
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.data/xdinfo.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdrtlx=alloc --only-section=.xdrtlx /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.rtlx/mlp.rtlx
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.data/MLP.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdpp=alloc --only-section=.xdpp /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.pp/mlp.ii
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdfcnmap=alloc --only-section=.xdfcnmap /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.cdb/MLP.MLP.fcnmap.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdhlscore=alloc --only-section=.xdhlscore /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/xilinx_com_hls_MLP_1_0.zip
+/usr/bin/unzip -u -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/xilinx_com_hls_MLP_1_0.zip -d /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0
+Archive:  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/xilinx_com_hls_MLP_1_0.zip
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/component.xml  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/constraints/a0_MLP_ooc.xdc  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_MLP_image_buf.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_MLP_l1_b_buf.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_MLP_l1_output_buf.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_MLP_l1_w_buf.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_MLP_l2_b_buf.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_MLP_l2_w_buf.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_MLP_mac_muladd_8s_5ns_20ns_20_1_1.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_MLP_mac_muladd_8s_8ns_26ns_26_1_1.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_MLP_out_buf.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_output_results.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_output_results_Loop_s.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_read_from_ddr.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_read_from_ddr_1.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_read_from_ddr_1_Loop.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_read_from_ddr_2.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_read_from_ddr_2_Loop.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_read_from_ddr_3.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_read_from_ddr_3_Loop.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_read_from_ddr_Loop_1.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_read_image_from_ddr.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_read_image_from_ddr_s.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/verilog/a0_MLP.v  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_MLP_image_buf.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_MLP_l1_b_buf.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_MLP_l1_output_buf.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_MLP_l1_w_buf.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_MLP_l2_b_buf.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_MLP_l2_w_buf.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_MLP_mac_muladd_8s_5ns_20ns_20_1_1.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_MLP_mac_muladd_8s_8ns_26ns_26_1_1.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_MLP_out_buf.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_output_results.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_output_results_Loop_s.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_read_from_ddr.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_read_from_ddr_1.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_read_from_ddr_1_Loop.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_read_from_ddr_2.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_read_from_ddr_2_Loop.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_read_from_ddr_3.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_read_from_ddr_3_Loop.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_read_from_ddr_Loop_1.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_read_image_from_ddr.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_read_image_from_ddr_s.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/hdl/vhdl/a0_MLP.vhd  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/doc/ReleaseNotes.txt  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/misc/logo.png  
+  inflating: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/xgui/MLP_v1_0.tcl  
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdif=alloc --only-section=.xdif /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.cdb/MLP_if.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/pynqlib.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.data/xdinfo.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/pynqlib.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.data/xddata.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/pynqlib.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.data/pynqlib.o.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/host.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.data/xdinfo.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/host.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.data/xddata.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/host.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.data/host.o.xml
+/tools/Xilinx/SDx/2018.3/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/.Xil/bare.hpfm  -ip /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0  -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.cdb/xd_ip_db.xml  
+INFO: Using user-defined path for XILINX_XD environment variable /tools/Xilinx/SDx/2018.3
+processing accelerators: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0
+ip_dir: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0
+/tools/Xilinx/SDx/2018.3/bin/xsltproc --stringparam xpath "spirit:component/spirit:name/text()" /tools/Xilinx/SDx/2018.3/scripts/xdcc/xpathValueOf.xsl /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo/xilinx_com_hls_MLP_1_0/component.xml
+ip_name: MLP
+Generating data motion network
+/tools/Xilinx/SDx/2018.3/bin/llvm-link -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.llvm/sds_all.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.s /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/pynqlib.s /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/host.s
+/tools/Xilinx/SDx/2018.3/bin/XidanePass  --dmclkid 0  --repo /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.cdb/xd_ip_db.xml  --dmdb /tools/Xilinx/SDx/2018.3/data/DM.db   -os linux -processor cortex-a9 -partition 0  
+INFO: [DMAnalysis 83-4494] Analyzing hardware accelerators...
+INFO: [DMAnalysis 83-4497] Analyzing callers to hardware accelerators...
+INFO: [DMAnalysis 83-4444] Scheduling data transfer graph for partition 0
+INFO: [DMAnalysis 83-4446] Creating data motion network hardware for partition 0
+INFO: [DMAnalysis 83-4448] Creating software stub functions for partition 0
+INFO: [DMAnalysis 83-4450] Generating data motion network report for partition 0
+INFO: [DMAnalysis 83-4454] Rewriting caller code
+Creating block diagram (BD)
+/tools/Xilinx/SDx/2018.3/bin/sdx_link  -cf-system /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.llvm/apsys_0.xml  -cf-db  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.cdb/xd_ip_db.xml  -xpfm /home/steve/Graduate_Research/MLP/Pynq-Z1/platforms/pynqZ1/pynqZ1.xpfm   -multi-clks -trace-buffer 1024 -os linux -quiet
+Creating top.bd.tcl
+/tools/Xilinx/SDx/2018.3/bin/cf2sw  -i /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.llvm/apsys_0.xml  -r /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.cdb/xd_ip_db.xml  -pollMode 0 -mc
+Rewrite caller functions
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/host.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.data/xdinfo.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/host.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.data/xddata.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/host.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.data/host.o.xml
+/tools/Xilinx/SDx/2018.3/bin/caller_rewrite  -rewrite /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.llvm/caller0.cfrewrite  -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/host.cpp  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/unix_host.cpp  --  -c  -I/home/steve/Graduate_Research/MLP/src -I/home/steve/Graduate_Research/MLP/inc -Wall -O3 -fPIC -D__HW__ -MMD -MP -D __SDSCC__  -target arm-linux-gnueabihf -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -O0 -g -w      -I /tools/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include   -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1 -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1/arm-linux-gnueabihf -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1/backward -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/7.3.1/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/7.3.1/include-fixed -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include  -std=c++11
+Compile caller rewrite file /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/host.cpp
+arm-linux-gnueabihf-g++  -c /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/host.cpp  -I/home/steve/Graduate_Research/MLP/src -I/home/steve/Graduate_Research/MLP/inc -Wall -O3 -fPIC -D__HW__ -MMD -MP -D __SDSCC__        -I /tools/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include  -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/host.o
+Prepare hardware access API functions
+Create accelerator stub functions
+/tools/Xilinx/SDx/2018.3/bin/stub_gen  -func "MLP" -stub /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.llvm/MLP.cfrewrite  -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.cpp  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/unix_mlp.cpp  --  -c  -I/home/steve/Graduate_Research/MLP/src -I/home/steve/Graduate_Research/MLP/inc -Wall -O3 -fPIC -D__HW__ -MMD -MP -D __SDSCC__  -target arm-linux-gnueabihf -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -O0 -g -w      -I /tools/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include   -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1 -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1/arm-linux-gnueabihf -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1/backward -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/7.3.1/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/7.3.1/include-fixed -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include  -std=c++11
+Compile hardware access API functions
+arm-linux-gnueabihf-gcc         -I /tools/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include -c -fPIC /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/portinfo.c
+arm-linux-gnueabihf-g++        -I /tools/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include -c -fPIC /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/cf_stub.c
+arm-linux-gnueabihf-ar crs /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/libxlnk_stub.a /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/portinfo.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/cf_stub.o
+Compile accelerator stub functions
+arm-linux-gnueabihf-g++ -c mlp.cpp -fPIC -I/home/steve/Graduate_Research/MLP/src -I/home/steve/Graduate_Research/MLP/inc -Wall -O3 -fPIC -D__HW__ -MMD -MP -D __SDSCC__        -I /tools/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include -o mlp.o
+/home/steve/Graduate_Research/MLP/src/mlp-util.hpp: In function ‘void fullyConnected(dImage_*, dType_*, dType_*, dImage_*, dType_Reg, dType_Reg)’:
+/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:51:9: warning: variable ‘tmp_in’ set but not used [-Wunused-but-set-variable]
+     int tmp_in = 0;
+         ^~~~~~
+/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:52:9: warning: variable ‘tmp_weight’ set but not used [-Wunused-but-set-variable]
+     int tmp_weight = 0;
+         ^~~~~~~~~~
+arm-linux-gnueabihf-ar crs /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/libmlp.a /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/portinfo.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/cf_stub.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.o
+Preliminary link application ELF
+arm-linux-gnueabihf-g++    /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/pynqlib.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/host.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/portinfo.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/cf_stub.o -fPIC -Wall -shared    -L/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs -L/tools/Xilinx/SDx/2018.3/target/aarch32-linux/lib -lsds_lib -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.so
+arm-linux-gnueabihf-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp -R .xdrtlx /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.so
+Enable generation of hardware programming files
+Enable generation of boot files
+Calling VPL
+/tools/Xilinx/SDx/2018.3/bin/vpl   --iprepo /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo  --iprepo /tools/Xilinx/SDx/2018.3/data/ip/xilinx  --platform /home/steve/Graduate_Research/MLP/Pynq-Z1/platforms/pynqZ1/pynqZ1.xpfm  --temp_dir /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0  --output_dir /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vpl  --input_file /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/.xsd/top.bd.tcl  --target hw   --save_temps  --kernels MLP:adapter --webtalk_flag SDSoC  --xp "param:compiler.deleteDefaultReportConfigs=false" 
+
+****** vpl v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+Attempting to get a license: ap_opencl
+INFO: [VPL 17-86] Your ap_opencl license expires in 9 day(s)
+INFO: [VPL 17-1540] The version limit for your license is '2019.05' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Feature available: ap_opencl
+INFO: [VPL 60-895]   Target platform: /home/steve/Graduate_Research/MLP/Pynq-Z1/platforms/pynqZ1/pynqZ1.xpfm
+INFO: [VPL 60-423]   Target device: pynqZ1
+INFO: [VPL 60-1032] Extracting DSA to /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/.local/dsa
+INFO: [VPL 60-251]   Hardware accelerator integration...
+Creating Vivado project and starting FPGA synthesis.
+[15:43:58] Block-level synthesis in progress, 7 of 42 jobs complete, 2 jobs running.
+[15:44:58] Block-level synthesis in progress, 8 of 42 jobs complete, 4 jobs running.
+[15:45:58] Block-level synthesis in progress, 12 of 42 jobs complete, 2 jobs running.
+[15:46:58] Block-level synthesis in progress, 20 of 42 jobs complete, 3 jobs running.
+[15:47:58] Block-level synthesis in progress, 26 of 42 jobs complete, 3 jobs running.
+[15:48:58] Block-level synthesis in progress, 31 of 42 jobs complete, 3 jobs running.
+[15:49:58] Block-level synthesis in progress, 42 of 42 jobs complete, 0 jobs running.
+[15:51:00] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 00h 10m 19s 
+
+[15:51:00] Starting logic optimization..
+[15:51:06] Phase 1 Retarget
+[15:51:06] Phase 2 Constant propagation
+[15:51:06] Phase 3 Sweep
+[15:51:11] Phase 4 BUFG optimization
+[15:51:11] Phase 5 Shift Register Optimization
+[15:51:11] Phase 6 Post Processing Netlist
+[15:51:32] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 00m 31s 
+
+[15:51:32] Starting logic placement..
+[15:51:32] Phase 1 Placer Initialization
+[15:51:32] Phase 1.1 Placer Initialization Netlist Sorting
+[15:51:32] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+[15:51:37] Phase 1.3 Build Placer Netlist Model
+[15:51:43] Phase 1.4 Constrain Clocks/Macros
+[15:51:43] Phase 2 Global Placement
+[15:51:43] Phase 2.1 Floorplanning
+[15:51:53] Phase 2.2 Physical Synthesis In Placer
+[15:51:53] Phase 3 Detail Placement
+[15:51:53] Phase 3.1 Commit Multi Column Macros
+[15:51:59] Phase 3.2 Commit Most Macros & LUTRAMs
+[15:51:59] Phase 3.3 Area Swap Optimization
+[15:51:59] Phase 3.4 Pipeline Register Optimization
+[15:51:59] Phase 3.5 Small Shape Detail Placement
+[15:52:04] Phase 3.6 Re-assign LUT pins
+[15:52:04] Phase 3.7 Pipeline Register Optimization
+[15:52:04] Phase 4 Post Placement Optimization and Clean-Up
+[15:52:04] Phase 4.1 Post Commit Optimization
+[15:52:04] Phase 4.1.1 Post Placement Optimization
+[15:52:04] Phase 4.1.1.1 BUFG Insertion
+[15:52:09] Phase 4.2 Post Placement Cleanup
+[15:52:09] Phase 4.3 Placer Reporting
+[15:52:09] Phase 4.4 Final Placement Cleanup
+[15:52:09] Finished 4th of 6 tasks (FPGA logic placement). Elapsed time: 00h 00m 37s 
+
+[15:52:09] Starting logic routing..
+[15:52:09] Phase 1 Build RT Design
+[15:52:25] Phase 2 Router Initialization
+[15:52:25] Phase 2.1 Create Timer
+[15:52:25] Phase 2.2 Fix Topology Constraints
+[15:52:25] Phase 2.3 Pre Route Cleanup
+[15:52:25] Phase 2.4 Update Timing
+[15:52:30] Phase 3 Initial Routing
+[15:52:30] Phase 4 Rip-up And Reroute
+[15:52:30] Phase 4.1 Global Iteration 0
+[15:52:36] Phase 4.2 Global Iteration 1
+[15:52:36] Phase 5 Delay and Skew Optimization
+[15:52:36] Phase 5.1 Delay CleanUp
+[15:52:36] Phase 5.2 Clock Skew Optimization
+[15:52:36] Phase 6 Post Hold Fix
+[15:52:36] Phase 6.1 Hold Fix Iter
+[15:52:36] Phase 6.1.1 Update Timing
+[15:52:36] Phase 7 Route finalize
+[15:52:36] Phase 8 Verifying routed nets
+[15:52:36] Phase 9 Depositing Routes
+[15:52:41] Phase 10 Post Router Timing
+[15:52:41] Finished 5th of 6 tasks (FPGA routing). Elapsed time: 00h 00m 31s 
+
+[15:52:41] Starting bitstream generation..
+[15:53:13] Creating bitmap...
+[15:53:18] Writing bitstream ./bare_wrapper.bit...
+[15:53:18] Finished 6th of 6 tasks (FPGA bitstream generation). Elapsed time: 00h 00m 37s 
+
+INFO: [VPL 60-841] Created output file: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vpl/address_map.xml
+INFO: [VPL 60-841] Created output file: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vpl/system.bit
+INFO: [VPL 60-841] Created output file: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vpl/system.hdf
+INFO: [VPL 60-841] Created output file: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vpl/_new_clk_freq
+/tools/Xilinx/SDx/2018.3/bin/cf2sw  -i /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.llvm/apsys_0.xml  -r /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.cdb/xd_ip_db.xml  -a address_map.xml  -pollMode 0 -mc
+Software tracing enabled
+Compile hardware access API functions
+arm-linux-gnueabihf-gcc         -I /tools/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include -c -fPIC /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/portinfo.c
+arm-linux-gnueabihf-g++        -I /tools/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include -c -fPIC /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/cf_stub.c
+arm-linux-gnueabihf-ar crs /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/libxlnk_stub.a /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/portinfo.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/cf_stub.o
+arm-linux-gnueabihf-ar crs /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/libmlp.a /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/portinfo.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/cf_stub.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.o
+Link application ELF file
+arm-linux-gnueabihf-g++    /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/pynqlib.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/host.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/portinfo.o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/cf_stub.o -fPIC -Wall -shared    -L/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs -L/tools/Xilinx/SDx/2018.3/target/aarch32-linux/lib -lsds_lib -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.so
+arm-linux-gnueabihf-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp -R .xdrtlx /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.so
+All user specified timing constraints are met.
+sds++ log file saved as /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/reports/sds.log
+sds++ completed at Wed Aug 14 15:53:27 EDT 2019

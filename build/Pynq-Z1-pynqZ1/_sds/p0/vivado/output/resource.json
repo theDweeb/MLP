@@ -1,0 +1,42 @@
+{
+    "Used Resources": [
+        {
+            "ip_instance": "bare_MLP_1_0",
+            "resources": [
+                {
+                    "LUT": "539"
+                },
+                {
+                    "LUTAsLogic": "487"
+                },
+                {
+                    "LUTMem": "52"
+                },
+                {
+                    "REG": "355"
+                },
+                {
+                    "F7MUX": "0"
+                },
+                {
+                    "F8MUX": "0"
+                },
+                {
+                    "BRAM": "25"
+                },
+                {
+                    "DSP": "2"
+                },
+                {
+                    "GLOBAL_CLOCK_BUFFERS": "0"
+                },
+                {
+                    "MMCM": "0"
+                },
+                {
+                    "PLL": "0"
+                }
+            ]
+        }
+    ]
+}

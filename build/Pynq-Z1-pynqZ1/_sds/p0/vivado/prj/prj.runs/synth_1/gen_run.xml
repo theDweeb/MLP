@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1565811780">
+  <File Type="VDS-TIMING-PB" Name="bare_wrapper_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="bare_wrapper_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="bare_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="bare_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="bare_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="bare_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="bare_wrapper.vds"/>
+  <File Type="REPORTS-TCL" Name="bare_wrapper_reports.tcl"/>
+  <File Type="PA-TCL" Name="bare_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/bare/bare.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../.local/dsa/prj/sources_1/bd/bare/bare.bd"/>
+        <Attr Name="ImportTime" Val="1565810246"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/bare_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../.local/dsa/prj/sources_1/bd/bare/hdl/bare_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1565809962"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/bare/hdl/bare_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="bare_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../output/bare_ooc_copy.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="out_of_context"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PPRDIR/../scripts/_full_init_post.tcl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="UsedInSteps" Val="impl_1;INIT_DESIGN;TCL.POST"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../scripts/_full_init_pre.tcl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="UsedInSteps" Val="impl_1;INIT_DESIGN;TCL.PRE"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../scripts/_full_opt_post.tcl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="UsedInSteps" Val="impl_1;OPT_DESIGN;TCL.POST"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../scripts/_full_opt_pre.tcl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="UsedInSteps" Val="impl_1;OPT_DESIGN;TCL.PRE"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../scripts/_full_place_post.tcl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="UsedInSteps" Val="impl_1;PLACE_DESIGN;TCL.POST"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../scripts/_full_place_pre.tcl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="UsedInSteps" Val="impl_1;PLACE_DESIGN;TCL.PRE"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../scripts/_full_post_route_phys_opt_post.tcl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="UsedInSteps" Val="impl_1;POST_ROUTE_PHYS_OPT_DESIGN;TCL.POST"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../scripts/_full_route_post.tcl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="UsedInSteps" Val="impl_1;ROUTE_DESIGN;TCL.POST"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="bare_s00_data_fifo_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_s00_regslice_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_s01_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_s01_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_m06_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_m04_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_m03_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_m02_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_auto_pc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_m00_regslice_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_m00_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_s05_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_s05_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_s04_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_s04_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_s03_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_s02_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_s02_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_m00_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_s00_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_axis_dwc_dm_5_rx_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_m05_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_dm_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_MLP_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_dm_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_dm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_m01_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_dm_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_s03_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_dm_5_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_dm_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_MLP_1_if_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_s00_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_axis_dwc_dm_4_tx_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_axis_dwc_dm_3_tx_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_axis_dwc_dm_2_tx_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_axis_dwc_dm_0_tx_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_axis_dwc_dm_1_tx_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bare_ps7_0_0"/>
+</GenRun>

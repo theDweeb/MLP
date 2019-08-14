@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<cf:model cf:cpu="cortex_a9" cf:partition="0" cf:prefix="p_0_" cf:name="top" xd:type="design" xmlns:xd="http://www.xilinx.com/xd" xmlns:cf="http://www.xilinx.com/connections">
+  <cf:block cf:name="hwblk_MLP">
+    <cf:port cf:name="cmd_MLP" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="image_r" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="l1_w" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="l1_b" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="l2_w" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="l2_b" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="out_r" cf:portType="stream" cf:direction="out"/>
+  </cf:block>
+  <cf:block cf:name="swblk_MLP">
+    <cf:port cf:name="cmd_MLP" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="image_r" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="l1_w" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="l1_b" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="l2_w" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="l2_b" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="out_r" cf:portType="stream" cf:direction="in"/>
+  </cf:block>
+  <cf:comp cf:name="bare" xd:componentRef="bare" xd:clockId="0"/>
+  <cf:comp cf:name="dm_0" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_1" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_2" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_3" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_4" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_5" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="MLP_1" xd:componentRef="MLP" xd:clockId="0"/>
+  <cf:instance cf:name="hwinst_MLP_1" cf:blockName="hwblk_MLP" cf:compName="MLP_1">
+    <cf:portMap cf:blockPort="cmd_MLP" cf:compPort="ap_ctrl" xd:register="0x8"/>
+    <cf:portMap cf:blockPort="image_r" cf:compPort="image_r" xd:paddedWidth="8"/>
+    <cf:portMap cf:blockPort="l1_w" cf:compPort="l1_w" xd:paddedWidth="8"/>
+    <cf:portMap cf:blockPort="l1_b" cf:compPort="l1_b" xd:paddedWidth="8"/>
+    <cf:portMap cf:blockPort="l2_w" cf:compPort="l2_w" xd:paddedWidth="8"/>
+    <cf:portMap cf:blockPort="l2_b" cf:compPort="l2_b" xd:paddedWidth="8"/>
+    <cf:portMap cf:blockPort="out_r" cf:compPort="out_r" xd:paddedWidth="8"/>
+  </cf:instance>
+  <cf:instance cf:name="swinst_MLP_1" cf:blockName="swblk_MLP" cf:compName="bare">
+    <cf:portMap cf:blockPort="cmd_MLP" cf:compPort="ps7_0_M_AXI_GP0"/>
+    <cf:portMap cf:blockPort="image_r" cf:compPort="ps7_0_S_AXI_ACP" cf:sptag="ACP"/>
+    <cf:portMap cf:blockPort="l1_w" cf:compPort="ps7_0_S_AXI_ACP" cf:sptag="ACP"/>
+    <cf:portMap cf:blockPort="l1_b" cf:compPort="ps7_0_S_AXI_ACP" cf:sptag="ACP"/>
+    <cf:portMap cf:blockPort="l2_w" cf:compPort="ps7_0_S_AXI_ACP" cf:sptag="ACP"/>
+    <cf:portMap cf:blockPort="l2_b" cf:compPort="ps7_0_S_AXI_ACP" cf:sptag="ACP"/>
+    <cf:portMap cf:blockPort="out_r" cf:compPort="ps7_0_S_AXI_ACP" cf:sptag="ACP"/>
+  </cf:instance>
+  <cf:connection cf:srcInst="swinst_MLP_1" cf:srcPort="cmd_MLP" cf:dstInst="hwinst_MLP_1" cf:dstPort="cmd_MLP">
+    <cf:dataMover cf:compName="bare" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_MLP_1" cf:srcPort="image_r" cf:dstInst="hwinst_MLP_1" cf:dstPort="image_r">
+    <cf:dataMover cf:compName="dm_0" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_MLP_1" cf:srcPort="l1_w" cf:dstInst="hwinst_MLP_1" cf:dstPort="l1_w">
+    <cf:dataMover cf:compName="dm_1" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_MLP_1" cf:srcPort="l1_b" cf:dstInst="hwinst_MLP_1" cf:dstPort="l1_b">
+    <cf:dataMover cf:compName="dm_2" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_MLP_1" cf:srcPort="l2_w" cf:dstInst="hwinst_MLP_1" cf:dstPort="l2_w">
+    <cf:dataMover cf:compName="dm_3" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_MLP_1" cf:srcPort="l2_b" cf:dstInst="hwinst_MLP_1" cf:dstPort="l2_b">
+    <cf:dataMover cf:compName="dm_4" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="hwinst_MLP_1" cf:srcPort="out_r" cf:dstInst="swinst_MLP_1" cf:dstPort="out_r">
+    <cf:dataMover cf:compName="dm_5" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+</cf:model>

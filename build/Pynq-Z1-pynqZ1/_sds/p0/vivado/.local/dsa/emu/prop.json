@@ -1,0 +1,16 @@
+{
+    "schemaVersion": {
+        "major": "1",
+        "minor": "0",
+        "patch": "0"
+    },
+    "DdrBanks": "",
+    "SystemClocks": {
+        "CPU": "650.000000",
+        "PL 0": "100.000000",
+        "PL 1": "142.857132",
+        "PL 2": "200.000000",
+        "PL 3": "100.000000"
+    },
+    "DesignIpInstances": ""
+}

@@ -6,7 +6,7 @@ if { $argc != 3 } {
         set board [lindex $argv 1]
         set proc [lindex $argv 2]
         platform -name ${overlay_name} \
-            -desc "${overlay_name} platform for Ultra96 board" \
+            -desc "${overlay_name} platform for Pynq-Z1 board" \
             -hw ${board}/hw/${overlay_name}.dsa -out .build -prebuilt
         system -name linux -display-name "Linux" \
             -boot ${board}/sw/linux/boot \

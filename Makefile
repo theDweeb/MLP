@@ -1,7 +1,7 @@
-DSA_PATH := ./DSA/2018.3/ultra.dsa
-OVERLAY := ultra
-BOARD := Ultra96
-PROC := psu_cortexa53
+DSA_PATH := ./DSA/2018.3/pynqZ1.dsa
+OVERLAY := pynqZ1
+BOARD := Pynq-Z1
+PROC := ps7_cortexa9_0
 TOP_FUNCTION = MLP
 TOP_FILE = mlp.cpp
 CLKID = 0

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xd" xd:fcnName="MLP" xd:type="hls_adapter" xd:adapterCompRef="MLP_if" xd:clockId="0" xd:templateInstantiation="__NA__" xd:componentRef="MLP" xd:initiationInterval="317059" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:busInterfaceRef="ap_ctrl" xd:portInterfaceType="acc_handshake" xd:type="axis_acc_adapter" xd:offset="0x8" xd:bufferDepth="16" xd:dataWidth="4"/>
+  <xd:arg xd:name="image" xd:swRootName="image" xd:direction="in" xd:busInterfaceRef="image_r" xd:hwName="image_r" xd:portInterfaceType="fifo" xd:dataWidth="8" xd:mode="master" xd:index="0" xd:instanceRef="MLP_if" xd:bufferDepth="1024"/>
+  <xd:arg xd:name="l1_w" xd:swRootName="l1_w" xd:direction="in" xd:busInterfaceRef="l1_w" xd:hwName="l1_w" xd:portInterfaceType="fifo" xd:dataWidth="8" xd:mode="master" xd:index="1" xd:instanceRef="MLP_if" xd:bufferDepth="1024"/>
+  <xd:arg xd:name="l1_b" xd:swRootName="l1_b" xd:direction="in" xd:busInterfaceRef="l1_b" xd:hwName="l1_b" xd:portInterfaceType="fifo" xd:dataWidth="8" xd:mode="master" xd:index="2" xd:instanceRef="MLP_if" xd:bufferDepth="1024"/>
+  <xd:arg xd:name="l2_w" xd:swRootName="l2_w" xd:direction="in" xd:busInterfaceRef="l2_w" xd:hwName="l2_w" xd:portInterfaceType="fifo" xd:dataWidth="8" xd:mode="master" xd:index="3" xd:instanceRef="MLP_if" xd:bufferDepth="1024"/>
+  <xd:arg xd:name="l2_b" xd:swRootName="l2_b" xd:direction="in" xd:busInterfaceRef="l2_b" xd:hwName="l2_b" xd:portInterfaceType="fifo" xd:dataWidth="8" xd:mode="master" xd:index="4" xd:instanceRef="MLP_if" xd:bufferDepth="1024"/>
+  <xd:arg xd:name="out" xd:swRootName="out" xd:direction="out" xd:busInterfaceRef="out_r" xd:hwName="out_r" xd:portInterfaceType="fifo" xd:firstOut="2" xd:dataWidth="8" xd:mode="master" xd:index="0" xd:instanceRef="MLP_if" xd:bufferDepth="1024"/>
+  <xd:latencyEstimates xd:best-case="317058" xd:worst-case="317058" xd:average-case="317058"/>
+  <xd:resourceEstimates xd:LUT="1492" xd:FF="470" xd:BRAM="33" xd:DSP="2"/>
+</xd:acceleratorMap>

@@ -1,0 +1,1102 @@
+
+*** Running vivado
+    with args -log bare_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bare_wrapper.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source bare_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/tools/Xilinx/SDx/2018.3/data/ip/xilinx'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/SDx/2018.3/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/.local/dsa/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/SDx/2018.3/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1767.113 ; gain = 256.945 ; free physical = 4449 ; free virtual = 9184
+Command: synth_design -top bare_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 27663 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1767.230 ; gain = 0.000 ; free physical = 4334 ; free virtual = 9069
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bare_wrapper' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/imports/hdl/bare_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'bare' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bare_MLP_1_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_MLP_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_MLP_1_0' (1#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_MLP_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bare_MLP_1_if_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_MLP_1_if_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_MLP_1_if_0' (2#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_MLP_1_if_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'MLP_1_if' of module 'bare_MLP_1_if_0' requires 97 connections, but only 95 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:466]
+INFO: [Synth 8-6157] synthesizing module 'bare_axcache_0xE_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_axcache_0xE_0/synth/bare_axcache_0xE_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_5_xlconstant' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 14 - type: integer 
+	Parameter CONST_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_5_xlconstant' (3#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bare_axcache_0xE_0' (4#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_axcache_0xE_0/synth/bare_axcache_0xE_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bare_axi_ic_ps7_0_M_AXI_GP0_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:1338]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_SLWXU2' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:3549]
+INFO: [Synth 8-6157] synthesizing module 'bare_m00_regslice_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_m00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_m00_regslice_0' (5#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_m00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_SLWXU2' (6#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:3549]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1XDZ8ZG' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:4405]
+INFO: [Synth 8-6157] synthesizing module 'bare_m01_regslice_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_m01_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_m01_regslice_0' (7#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_m01_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm01_regslice' of module 'bare_m01_regslice_0' requires 40 connections, but only 37 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:4560]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1XDZ8ZG' (8#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:4405]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_11B2G2V' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:4600]
+INFO: [Synth 8-6157] synthesizing module 'bare_m02_regslice_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_m02_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_m02_regslice_0' (9#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_m02_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm02_regslice' of module 'bare_m02_regslice_0' requires 40 connections, but only 37 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:4755]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_11B2G2V' (10#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:4600]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_7MHG29' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:4795]
+INFO: [Synth 8-6157] synthesizing module 'bare_m03_regslice_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_m03_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_m03_regslice_0' (11#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_m03_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm03_regslice' of module 'bare_m03_regslice_0' requires 40 connections, but only 37 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:4950]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_7MHG29' (12#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:4795]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_Z5Q0R5' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:4990]
+INFO: [Synth 8-6157] synthesizing module 'bare_m04_regslice_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_m04_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_m04_regslice_0' (13#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_m04_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm04_regslice' of module 'bare_m04_regslice_0' requires 40 connections, but only 37 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:5145]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_Z5Q0R5' (14#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:4990]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1R6NMZR' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:5185]
+INFO: [Synth 8-6157] synthesizing module 'bare_m05_regslice_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_m05_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_m05_regslice_0' (15#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_m05_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm05_regslice' of module 'bare_m05_regslice_0' requires 40 connections, but only 37 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:5340]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1R6NMZR' (16#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:5185]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_18CPEYK' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:5380]
+INFO: [Synth 8-6157] synthesizing module 'bare_m06_regslice_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_m06_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_m06_regslice_0' (17#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_m06_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm06_regslice' of module 'bare_m06_regslice_0' requires 40 connections, but only 37 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:5535]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_18CPEYK' (18#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:5380]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_18VLYF3' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:5575]
+INFO: [Synth 8-6157] synthesizing module 'bare_auto_pc_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_auto_pc_0' (19#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bare_s00_data_fifo_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_s00_data_fifo_0' (20#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bare_s00_regslice_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_s00_regslice_0' (21#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_18VLYF3' (22#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:5575]
+INFO: [Synth 8-6157] synthesizing module 'bare_xbar_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_xbar_0' (23#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_axi_ic_ps7_0_M_AXI_GP0_0' (24#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:1338]
+INFO: [Synth 8-6157] synthesizing module 'bare_axi_ic_ps7_0_S_AXI_ACP_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:2533]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_W9AT5L' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:3759]
+INFO: [Synth 8-6157] synthesizing module 'bare_auto_pc_1' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_auto_pc_1' (25#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bare_m00_data_fifo_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_m00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_m00_data_fifo_0' (26#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_m00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bare_m00_regslice_1' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_m00_regslice_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_m00_regslice_1' (27#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_m00_regslice_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_W9AT5L' (28#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:3759]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1DN0B3G' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:6061]
+INFO: [Synth 8-6157] synthesizing module 'bare_s00_data_fifo_1' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s00_data_fifo_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_s00_data_fifo_1' (29#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s00_data_fifo_1_stub.v:6]
+WARNING: [Synth 8-350] instance 's00_data_fifo' of module 'bare_s00_data_fifo_1' requires 34 connections, but only 33 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:6208]
+INFO: [Synth 8-6157] synthesizing module 'bare_s00_regslice_1' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s00_regslice_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_s00_regslice_1' (30#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s00_regslice_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1DN0B3G' (31#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:6061]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_DAK4M2' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:6279]
+INFO: [Synth 8-6157] synthesizing module 'bare_s01_data_fifo_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s01_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_s01_data_fifo_0' (32#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s01_data_fifo_0_stub.v:6]
+WARNING: [Synth 8-350] instance 's01_data_fifo' of module 'bare_s01_data_fifo_0' requires 34 connections, but only 33 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:6426]
+INFO: [Synth 8-6157] synthesizing module 'bare_s01_regslice_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s01_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_s01_regslice_0' (33#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s01_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_DAK4M2' (34#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:6279]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_N6FX4X' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:6497]
+INFO: [Synth 8-6157] synthesizing module 'bare_s02_data_fifo_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s02_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_s02_data_fifo_0' (35#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s02_data_fifo_0_stub.v:6]
+WARNING: [Synth 8-350] instance 's02_data_fifo' of module 'bare_s02_data_fifo_0' requires 34 connections, but only 33 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:6644]
+INFO: [Synth 8-6157] synthesizing module 'bare_s02_regslice_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s02_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_s02_regslice_0' (36#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s02_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_N6FX4X' (37#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:6497]
+INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_1LAWVSN' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:6715]
+INFO: [Synth 8-6157] synthesizing module 'bare_s03_data_fifo_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s03_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_s03_data_fifo_0' (38#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s03_data_fifo_0_stub.v:6]
+WARNING: [Synth 8-350] instance 's03_data_fifo' of module 'bare_s03_data_fifo_0' requires 34 connections, but only 33 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:6862]
+INFO: [Synth 8-6157] synthesizing module 'bare_s03_regslice_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s03_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_s03_regslice_0' (39#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s03_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_1LAWVSN' (40#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:6715]
+INFO: [Synth 8-6157] synthesizing module 's04_couplers_imp_1BJ0RW7' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:6933]
+INFO: [Synth 8-6157] synthesizing module 'bare_s04_data_fifo_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s04_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_s04_data_fifo_0' (41#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s04_data_fifo_0_stub.v:6]
+WARNING: [Synth 8-350] instance 's04_data_fifo' of module 'bare_s04_data_fifo_0' requires 34 connections, but only 33 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:7080]
+INFO: [Synth 8-6157] synthesizing module 'bare_s04_regslice_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s04_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_s04_regslice_0' (42#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s04_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's04_couplers_imp_1BJ0RW7' (43#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:6933]
+INFO: [Synth 8-6157] synthesizing module 's05_couplers_imp_F22A0X' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:7151]
+INFO: [Synth 8-6157] synthesizing module 'bare_s05_data_fifo_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s05_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_s05_data_fifo_0' (44#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s05_data_fifo_0_stub.v:6]
+WARNING: [Synth 8-350] instance 's05_data_fifo' of module 'bare_s05_data_fifo_0' requires 40 connections, but only 39 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:7325]
+INFO: [Synth 8-6157] synthesizing module 'bare_s05_regslice_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s05_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_s05_regslice_0' (45#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_s05_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's05_couplers_imp_F22A0X' (46#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:7151]
+INFO: [Synth 8-6157] synthesizing module 'bare_xbar_1' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_xbar_1' (47#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_xbar_1_stub.v:6]
+WARNING: [Synth 8-689] width (5) of port connection 's_axi_arready' does not match port width (6) of module 'bare_xbar_1' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:3520]
+WARNING: [Synth 8-689] width (320) of port connection 's_axi_rdata' does not match port width (384) of module 'bare_xbar_1' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:3537]
+WARNING: [Synth 8-689] width (5) of port connection 's_axi_rlast' does not match port width (6) of module 'bare_xbar_1' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:3538]
+WARNING: [Synth 8-689] width (10) of port connection 's_axi_rresp' does not match port width (12) of module 'bare_xbar_1' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:3540]
+WARNING: [Synth 8-689] width (5) of port connection 's_axi_rvalid' does not match port width (6) of module 'bare_xbar_1' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:3541]
+WARNING: [Synth 8-350] instance 'xbar' of module 'bare_xbar_1' requires 78 connections, but only 76 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:3470]
+INFO: [Synth 8-6155] done synthesizing module 'bare_axi_ic_ps7_0_S_AXI_ACP_0' (48#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:2533]
+INFO: [Synth 8-6157] synthesizing module 'bare_axis_dwc_dm_0_tx_0_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_axis_dwc_dm_0_tx_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_axis_dwc_dm_0_tx_0_0' (49#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_axis_dwc_dm_0_tx_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bare_axis_dwc_dm_1_tx_0_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_axis_dwc_dm_1_tx_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_axis_dwc_dm_1_tx_0_0' (50#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_axis_dwc_dm_1_tx_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bare_axis_dwc_dm_2_tx_0_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_axis_dwc_dm_2_tx_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_axis_dwc_dm_2_tx_0_0' (51#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_axis_dwc_dm_2_tx_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bare_axis_dwc_dm_3_tx_0_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_axis_dwc_dm_3_tx_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_axis_dwc_dm_3_tx_0_0' (52#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_axis_dwc_dm_3_tx_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bare_axis_dwc_dm_4_tx_0_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_axis_dwc_dm_4_tx_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_axis_dwc_dm_4_tx_0_0' (53#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_axis_dwc_dm_4_tx_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bare_axis_dwc_dm_5_rx_0_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_axis_dwc_dm_5_rx_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_axis_dwc_dm_5_rx_0_0' (54#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_axis_dwc_dm_5_rx_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axis_dwc_dm_5_rx_0' of module 'bare_axis_dwc_dm_5_rx_0_0' requires 14 connections, but only 13 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:937]
+INFO: [Synth 8-6157] synthesizing module 'bare_constant0_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_constant0_0/synth/bare_constant0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_5_xlconstant__parameterized0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 0 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_5_xlconstant__parameterized0' (54#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bare_constant0_0' (55#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_constant0_0/synth/bare_constant0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bare_dm_0_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_dm_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_dm_0_0' (56#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_dm_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dm_0' of module 'bare_dm_0_0' requires 40 connections, but only 36 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:953]
+INFO: [Synth 8-6157] synthesizing module 'bare_dm_1_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_dm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_dm_1_0' (57#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_dm_1_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dm_1' of module 'bare_dm_1_0' requires 40 connections, but only 36 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:990]
+INFO: [Synth 8-6157] synthesizing module 'bare_dm_2_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_dm_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_dm_2_0' (58#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_dm_2_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dm_2' of module 'bare_dm_2_0' requires 40 connections, but only 36 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:1027]
+INFO: [Synth 8-6157] synthesizing module 'bare_dm_3_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_dm_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_dm_3_0' (59#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_dm_3_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dm_3' of module 'bare_dm_3_0' requires 40 connections, but only 36 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:1064]
+INFO: [Synth 8-6157] synthesizing module 'bare_dm_4_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_dm_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_dm_4_0' (60#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_dm_4_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dm_4' of module 'bare_dm_4_0' requires 40 connections, but only 36 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:1101]
+INFO: [Synth 8-6157] synthesizing module 'bare_dm_5_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_dm_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_dm_5_0' (61#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_dm_5_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dm_5' of module 'bare_dm_5_0' requires 43 connections, but only 39 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:1138]
+INFO: [Synth 8-6157] synthesizing module 'bare_ps7_0_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_ps7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_ps7_0_0' (62#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_ps7_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'ps7_0' of module 'bare_ps7_0_0' requires 119 connections, but only 111 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:1178]
+INFO: [Synth 8-6157] synthesizing module 'bare_rst_ps7_0_fclk0_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_rst_ps7_0_fclk0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_rst_ps7_0_fclk0_0' (63#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_rst_ps7_0_fclk0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_ps7_0_fclk0' of module 'bare_rst_ps7_0_fclk0_0' requires 10 connections, but only 7 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:1290]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:1298]
+INFO: [Synth 8-6157] synthesizing module 'bare_rst_ps7_0_fclk1_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_rst_ps7_0_fclk1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_rst_ps7_0_fclk1_0' (64#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_rst_ps7_0_fclk1_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_ps7_0_fclk1' of module 'bare_rst_ps7_0_fclk1_0' requires 10 connections, but only 5 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:1298]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:1304]
+INFO: [Synth 8-6157] synthesizing module 'bare_rst_ps7_0_fclk2_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_rst_ps7_0_fclk2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_rst_ps7_0_fclk2_0' (65#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_rst_ps7_0_fclk2_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_ps7_0_fclk2' of module 'bare_rst_ps7_0_fclk2_0' requires 10 connections, but only 5 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:1304]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:1310]
+INFO: [Synth 8-6157] synthesizing module 'bare_rst_ps7_0_fclk3_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_rst_ps7_0_fclk3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bare_rst_ps7_0_fclk3_0' (66#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27656-Steven-F/realtime/bare_rst_ps7_0_fclk3_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_ps7_0_fclk3' of module 'bare_rst_ps7_0_fclk3_0' requires 10 connections, but only 5 given [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:1310]
+INFO: [Synth 8-6157] synthesizing module 'bare_sds_irq_const_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_sds_irq_const_0/synth/bare_sds_irq_const_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'bare_sds_irq_const_0' (67#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_sds_irq_const_0/synth/bare_sds_irq_const_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bare_xlconcat_0_0' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_xlconcat_0_0/synth/bare_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_1_xlconcat' [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 16 - type: integer 
+	Parameter NUM_PORTS bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_1_xlconcat' (68#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'bare_xlconcat_0_0' (69#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_xlconcat_0_0/synth/bare_xlconcat_0_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'bare' (70#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/synth/bare.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'bare_wrapper' (71#1) [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/imports/hdl/bare_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In31[0]
+WARNING: [Synth 8-3331] design bare_axi_ic_ps7_0_S_AXI_ACP_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design bare_axi_ic_ps7_0_S_AXI_ACP_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design bare_axi_ic_ps7_0_S_AXI_ACP_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design bare_axi_ic_ps7_0_S_AXI_ACP_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design bare_axi_ic_ps7_0_S_AXI_ACP_0 has unconnected port S01_ACLK
+WARNING: [Synth 8-3331] design bare_axi_ic_ps7_0_S_AXI_ACP_0 has unconnected port S01_ARESETN
+WARNING: [Synth 8-3331] design bare_axi_ic_ps7_0_S_AXI_ACP_0 has unconnected port S02_ACLK
+WARNING: [Synth 8-3331] design bare_axi_ic_ps7_0_S_AXI_ACP_0 has unconnected port S02_ARESETN
+WARNING: [Synth 8-3331] design bare_axi_ic_ps7_0_S_AXI_ACP_0 has unconnected port S03_ACLK
+WARNING: [Synth 8-3331] design bare_axi_ic_ps7_0_S_AXI_ACP_0 has unconnected port S03_ARESETN
+WARNING: [Synth 8-3331] design bare_axi_ic_ps7_0_S_AXI_ACP_0 has unconnected port S04_ACLK
+WARNING: [Synth 8-3331] design bare_axi_ic_ps7_0_S_AXI_ACP_0 has unconnected port S04_ARESETN
+WARNING: [Synth 8-3331] design bare_axi_ic_ps7_0_S_AXI_ACP_0 has unconnected port S05_ACLK
+WARNING: [Synth 8-3331] design bare_axi_ic_ps7_0_S_AXI_ACP_0 has unconnected port S05_ARESETN
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[21]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[20]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[19]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[18]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[17]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[16]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[15]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[14]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[13]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[12]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[11]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_araddr[10]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[31]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[30]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[29]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[28]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[27]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[26]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[25]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[24]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[23]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[22]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[21]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[20]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[19]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[18]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[17]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[16]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[15]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[14]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[13]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[12]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[11]
+WARNING: [Synth 8-3331] design m06_couplers_imp_18CPEYK has unconnected port S_AXI_awaddr[10]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[21]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[20]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[19]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[18]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[17]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[16]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[15]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[14]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[13]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[12]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[11]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1R6NMZR has unconnected port S_AXI_araddr[10]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1767.230 ; gain = 0.000 ; free physical = 4338 ; free virtual = 9074
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1767.230 ; gain = 0.000 ; free physical = 4343 ; free virtual = 9079
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1767.230 ; gain = 0.000 ; free physical = 4343 ; free virtual = 9079
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc] for cell 'bare_i/ps7_0'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc] for cell 'bare_i/ps7_0'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_rst_ps7_0_fclk0_0/bare_rst_ps7_0_fclk0_0/bare_rst_ps7_0_fclk3_0_in_context.xdc] for cell 'bare_i/rst_ps7_0_fclk0'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_rst_ps7_0_fclk0_0/bare_rst_ps7_0_fclk0_0/bare_rst_ps7_0_fclk3_0_in_context.xdc] for cell 'bare_i/rst_ps7_0_fclk0'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_rst_ps7_0_fclk1_0/bare_rst_ps7_0_fclk1_0/bare_rst_ps7_0_fclk1_0_in_context.xdc] for cell 'bare_i/rst_ps7_0_fclk1'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_rst_ps7_0_fclk1_0/bare_rst_ps7_0_fclk1_0/bare_rst_ps7_0_fclk1_0_in_context.xdc] for cell 'bare_i/rst_ps7_0_fclk1'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_rst_ps7_0_fclk2_0/bare_rst_ps7_0_fclk2_0/bare_rst_ps7_0_fclk2_0_in_context.xdc] for cell 'bare_i/rst_ps7_0_fclk2'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_rst_ps7_0_fclk2_0/bare_rst_ps7_0_fclk2_0/bare_rst_ps7_0_fclk2_0_in_context.xdc] for cell 'bare_i/rst_ps7_0_fclk2'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_rst_ps7_0_fclk3_0/bare_rst_ps7_0_fclk3_0/bare_rst_ps7_0_fclk3_0_in_context.xdc] for cell 'bare_i/rst_ps7_0_fclk3'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_rst_ps7_0_fclk3_0/bare_rst_ps7_0_fclk3_0/bare_rst_ps7_0_fclk3_0_in_context.xdc] for cell 'bare_i/rst_ps7_0_fclk3'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_dm_0_0/bare_dm_0_0/bare_dm_4_0_in_context.xdc] for cell 'bare_i/dm_0'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_dm_0_0/bare_dm_0_0/bare_dm_4_0_in_context.xdc] for cell 'bare_i/dm_0'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_dm_1_0/bare_dm_1_0/bare_dm_4_0_in_context.xdc] for cell 'bare_i/dm_1'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_dm_1_0/bare_dm_1_0/bare_dm_4_0_in_context.xdc] for cell 'bare_i/dm_1'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_dm_2_0/bare_dm_2_0/bare_dm_4_0_in_context.xdc] for cell 'bare_i/dm_2'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_dm_2_0/bare_dm_2_0/bare_dm_4_0_in_context.xdc] for cell 'bare_i/dm_2'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_dm_3_0/bare_dm_3_0/bare_dm_4_0_in_context.xdc] for cell 'bare_i/dm_3'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_dm_3_0/bare_dm_3_0/bare_dm_4_0_in_context.xdc] for cell 'bare_i/dm_3'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_dm_4_0/bare_dm_4_0/bare_dm_4_0_in_context.xdc] for cell 'bare_i/dm_4'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_dm_4_0/bare_dm_4_0/bare_dm_4_0_in_context.xdc] for cell 'bare_i/dm_4'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_dm_5_0/bare_dm_5_0/bare_dm_5_0_in_context.xdc] for cell 'bare_i/dm_5'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_dm_5_0/bare_dm_5_0/bare_dm_5_0_in_context.xdc] for cell 'bare_i/dm_5'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_MLP_1_0/bare_MLP_1_0/bare_MLP_1_0_in_context.xdc] for cell 'bare_i/MLP_1'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_MLP_1_0/bare_MLP_1_0/bare_MLP_1_0_in_context.xdc] for cell 'bare_i/MLP_1'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_MLP_1_if_0/bare_MLP_1_if_0/bare_MLP_1_if_0_in_context.xdc] for cell 'bare_i/MLP_1_if'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_MLP_1_if_0/bare_MLP_1_if_0/bare_MLP_1_if_0_in_context.xdc] for cell 'bare_i/MLP_1_if'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_xbar_0/bare_xbar_0/bare_xbar_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/xbar'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_xbar_0/bare_xbar_0/bare_xbar_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/xbar'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_xbar_1/bare_xbar_1/bare_xbar_1_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/xbar'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_xbar_1/bare_xbar_1/bare_xbar_1_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/xbar'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_axis_dwc_dm_0_tx_0_0/bare_axis_dwc_dm_0_tx_0_0/bare_axis_dwc_dm_0_tx_0_0_in_context.xdc] for cell 'bare_i/axis_dwc_dm_0_tx_0'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_axis_dwc_dm_0_tx_0_0/bare_axis_dwc_dm_0_tx_0_0/bare_axis_dwc_dm_0_tx_0_0_in_context.xdc] for cell 'bare_i/axis_dwc_dm_0_tx_0'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_axis_dwc_dm_1_tx_0_0/bare_axis_dwc_dm_1_tx_0_0/bare_axis_dwc_dm_0_tx_0_0_in_context.xdc] for cell 'bare_i/axis_dwc_dm_1_tx_0'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_axis_dwc_dm_1_tx_0_0/bare_axis_dwc_dm_1_tx_0_0/bare_axis_dwc_dm_0_tx_0_0_in_context.xdc] for cell 'bare_i/axis_dwc_dm_1_tx_0'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_axis_dwc_dm_2_tx_0_0/bare_axis_dwc_dm_2_tx_0_0/bare_axis_dwc_dm_0_tx_0_0_in_context.xdc] for cell 'bare_i/axis_dwc_dm_2_tx_0'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_axis_dwc_dm_2_tx_0_0/bare_axis_dwc_dm_2_tx_0_0/bare_axis_dwc_dm_0_tx_0_0_in_context.xdc] for cell 'bare_i/axis_dwc_dm_2_tx_0'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_axis_dwc_dm_3_tx_0_0/bare_axis_dwc_dm_3_tx_0_0/bare_axis_dwc_dm_0_tx_0_0_in_context.xdc] for cell 'bare_i/axis_dwc_dm_3_tx_0'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_axis_dwc_dm_3_tx_0_0/bare_axis_dwc_dm_3_tx_0_0/bare_axis_dwc_dm_0_tx_0_0_in_context.xdc] for cell 'bare_i/axis_dwc_dm_3_tx_0'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_axis_dwc_dm_4_tx_0_0/bare_axis_dwc_dm_4_tx_0_0/bare_axis_dwc_dm_0_tx_0_0_in_context.xdc] for cell 'bare_i/axis_dwc_dm_4_tx_0'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_axis_dwc_dm_4_tx_0_0/bare_axis_dwc_dm_4_tx_0_0/bare_axis_dwc_dm_0_tx_0_0_in_context.xdc] for cell 'bare_i/axis_dwc_dm_4_tx_0'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_axis_dwc_dm_5_rx_0_0/bare_axis_dwc_dm_5_rx_0_0/bare_axis_dwc_dm_5_rx_0_0_in_context.xdc] for cell 'bare_i/axis_dwc_dm_5_rx_0'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_axis_dwc_dm_5_rx_0_0/bare_axis_dwc_dm_5_rx_0_0/bare_axis_dwc_dm_5_rx_0_0_in_context.xdc] for cell 'bare_i/axis_dwc_dm_5_rx_0'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s00_regslice_0/bare_s00_regslice_0/bare_s00_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s00_regslice_0/bare_s00_regslice_0/bare_s00_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/s00_couplers/s00_regslice'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s00_data_fifo_0/bare_s00_data_fifo_0/bare_s00_data_fifo_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/s00_couplers/s00_data_fifo'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s00_data_fifo_0/bare_s00_data_fifo_0/bare_s00_data_fifo_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/s00_couplers/s00_data_fifo'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_auto_pc_0/bare_auto_pc_0/bare_auto_pc_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_auto_pc_0/bare_auto_pc_0/bare_auto_pc_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/s00_couplers/auto_pc'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_m00_regslice_0/bare_m00_regslice_0/bare_m00_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/m00_couplers/m00_regslice'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_m00_regslice_0/bare_m00_regslice_0/bare_m00_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/m00_couplers/m00_regslice'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_m01_regslice_0/bare_m01_regslice_0/bare_m01_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/m01_couplers/m01_regslice'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_m01_regslice_0/bare_m01_regslice_0/bare_m01_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/m01_couplers/m01_regslice'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_m02_regslice_0/bare_m02_regslice_0/bare_m01_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/m02_couplers/m02_regslice'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_m02_regslice_0/bare_m02_regslice_0/bare_m01_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/m02_couplers/m02_regslice'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_m03_regslice_0/bare_m03_regslice_0/bare_m01_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/m03_couplers/m03_regslice'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_m03_regslice_0/bare_m03_regslice_0/bare_m01_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/m03_couplers/m03_regslice'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_m04_regslice_0/bare_m04_regslice_0/bare_m01_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/m04_couplers/m04_regslice'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_m04_regslice_0/bare_m04_regslice_0/bare_m01_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/m04_couplers/m04_regslice'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_m05_regslice_0/bare_m05_regslice_0/bare_m01_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/m05_couplers/m05_regslice'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_m05_regslice_0/bare_m05_regslice_0/bare_m01_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/m05_couplers/m05_regslice'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_m06_regslice_0/bare_m06_regslice_0/bare_m01_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/m06_couplers/m06_regslice'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_m06_regslice_0/bare_m06_regslice_0/bare_m01_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_M_AXI_GP0/m06_couplers/m06_regslice'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s00_regslice_1/bare_s00_regslice_1/bare_s02_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s00_regslice_1/bare_s00_regslice_1/bare_s02_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s00_couplers/s00_regslice'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s00_data_fifo_1/bare_s00_data_fifo_1/bare_s02_data_fifo_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s00_couplers/s00_data_fifo'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s00_data_fifo_1/bare_s00_data_fifo_1/bare_s02_data_fifo_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s00_couplers/s00_data_fifo'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s01_regslice_0/bare_s01_regslice_0/bare_s02_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s01_couplers/s01_regslice'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s01_regslice_0/bare_s01_regslice_0/bare_s02_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s01_couplers/s01_regslice'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s01_data_fifo_0/bare_s01_data_fifo_0/bare_s02_data_fifo_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s01_couplers/s01_data_fifo'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s01_data_fifo_0/bare_s01_data_fifo_0/bare_s02_data_fifo_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s01_couplers/s01_data_fifo'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s02_regslice_0/bare_s02_regslice_0/bare_s02_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s02_couplers/s02_regslice'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s02_regslice_0/bare_s02_regslice_0/bare_s02_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s02_couplers/s02_regslice'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s02_data_fifo_0/bare_s02_data_fifo_0/bare_s02_data_fifo_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s02_couplers/s02_data_fifo'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s02_data_fifo_0/bare_s02_data_fifo_0/bare_s02_data_fifo_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s02_couplers/s02_data_fifo'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s03_regslice_0/bare_s03_regslice_0/bare_s02_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s03_couplers/s03_regslice'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s03_regslice_0/bare_s03_regslice_0/bare_s02_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s03_couplers/s03_regslice'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s03_data_fifo_0/bare_s03_data_fifo_0/bare_s02_data_fifo_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s03_couplers/s03_data_fifo'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s03_data_fifo_0/bare_s03_data_fifo_0/bare_s02_data_fifo_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s03_couplers/s03_data_fifo'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s04_regslice_0/bare_s04_regslice_0/bare_s02_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s04_couplers/s04_regslice'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s04_regslice_0/bare_s04_regslice_0/bare_s02_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s04_couplers/s04_regslice'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s04_data_fifo_0/bare_s04_data_fifo_0/bare_s02_data_fifo_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s04_couplers/s04_data_fifo'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s04_data_fifo_0/bare_s04_data_fifo_0/bare_s02_data_fifo_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s04_couplers/s04_data_fifo'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s05_regslice_0/bare_s05_regslice_0/bare_s05_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s05_couplers/s05_regslice'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s05_regslice_0/bare_s05_regslice_0/bare_s05_regslice_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s05_couplers/s05_regslice'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s05_data_fifo_0/bare_s05_data_fifo_0/bare_s05_data_fifo_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s05_couplers/s05_data_fifo'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_s05_data_fifo_0/bare_s05_data_fifo_0/bare_s05_data_fifo_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/s05_couplers/s05_data_fifo'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_m00_data_fifo_0/bare_m00_data_fifo_0/bare_m00_data_fifo_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/m00_couplers/m00_data_fifo'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_m00_data_fifo_0/bare_m00_data_fifo_0/bare_m00_data_fifo_0_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/m00_couplers/m00_data_fifo'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_m00_regslice_1/bare_m00_regslice_1/bare_m00_regslice_1_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/m00_couplers/m00_regslice'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_m00_regslice_1/bare_m00_regslice_1/bare_m00_regslice_1_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/m00_couplers/m00_regslice'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_auto_pc_1/bare_auto_pc_1/bare_auto_pc_1_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/m00_couplers/auto_pc'
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_auto_pc_1/bare_auto_pc_1/bare_auto_pc_1_in_context.xdc] for cell 'bare_i/axi_ic_ps7_0_S_AXI_ACP/m00_couplers/auto_pc'
+Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2014.688 ; gain = 0.000 ; free physical = 4052 ; free virtual = 8789
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2014.688 ; gain = 0.000 ; free physical = 4052 ; free virtual = 8788
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2014.688 ; gain = 0.000 ; free physical = 4052 ; free virtual = 8788
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2014.688 ; gain = 247.457 ; free physical = 4147 ; free virtual = 8883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2014.688 ; gain = 247.457 ; free physical = 4147 ; free virtual = 8883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 45).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 46).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 47).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 48).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 49).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 50).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 51).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 52).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 53).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 54).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 55).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 56).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 57).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 58).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 59).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 60).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 61).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 62).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 63).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 64).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 65).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 66).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 67).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 68).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 69).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 70).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 71).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 72).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 73).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 74).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 75).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 76).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 77).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 78).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 79).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 80).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 81).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 82).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 83).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 84).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 85).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 86).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 87).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 88).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 89).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 90).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 91).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 92).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 93).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 94).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 95).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 96).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 97).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 98).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 99).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 100).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 101).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 102).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 103).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 104).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 105).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 106).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 107).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 108).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 109).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 110).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 111).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 112).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 113).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 114).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 115).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 116).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 117).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 118).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 119).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 120).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 121).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 122).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 123).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 124).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 125).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 126).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 127).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 128).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 129).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 130).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 131).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 132).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 133).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 134).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 135).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 136).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 137).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 138).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 139).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 140).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 141).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 142).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 143).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 144).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 145).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 146).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 147).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 148).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 149).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 150).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 151).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 152).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 153).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 154).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 155).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 156).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 157).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 158).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 159).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 160).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 161).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 162).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 163).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 164).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 165).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 166).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 167).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 168).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 169).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 170).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 171).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 172).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 173).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 174).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 175).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 176).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 177).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 178).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 179).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 180).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 181).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 182).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 183).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 184).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 185).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 186).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 187).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 188).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 189).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 190).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 191).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 192).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 193).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 194).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 195).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 196).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 197).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 198).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 199).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 200).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 201).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 202).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 203).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 204).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 205).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 206).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 207).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 208).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 209).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 210).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 211).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 212).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 213).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 214).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 215).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 216).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 217).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 218).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 219).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 220).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 221).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 222).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 223).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 224).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 225).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 226).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 227).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 228).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 229).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 230).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 231).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 232).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 233).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 234).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 235).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 236).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 237).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 238).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 239).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 240).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 241).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 242).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 243).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 244).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 245).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 246).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 247).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 248).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 249).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 250).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 251).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 252).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 253).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 254).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 255).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 256).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 257).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 258).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 259).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 260).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 261).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 262).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 263).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/bare/ip/bare_ps7_0_0/bare_ps7_0_0/bare_ps7_0_0_in_context.xdc, line 264).
+Applied set_property DONT_TOUCH = true for bare_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/constant0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/ps7_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/rst_ps7_0_fclk0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/rst_ps7_0_fclk1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/rst_ps7_0_fclk2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/rst_ps7_0_fclk3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/dm_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/dm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/dm_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/dm_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/dm_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/dm_5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/MLP_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/MLP_1_if. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_M_AXI_GP0/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_M_AXI_GP0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_S_AXI_ACP/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_S_AXI_ACP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axis_dwc_dm_0_tx_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axis_dwc_dm_1_tx_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axis_dwc_dm_2_tx_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axis_dwc_dm_3_tx_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axis_dwc_dm_4_tx_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axis_dwc_dm_5_rx_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/sds_irq_const. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axcache_0xE. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_M_AXI_GP0/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_M_AXI_GP0/s00_couplers/s00_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_M_AXI_GP0/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_M_AXI_GP0/m00_couplers/m00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_M_AXI_GP0/m01_couplers/m01_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_M_AXI_GP0/m02_couplers/m02_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_M_AXI_GP0/m03_couplers/m03_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_M_AXI_GP0/m04_couplers/m04_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_M_AXI_GP0/m05_couplers/m05_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_M_AXI_GP0/m06_couplers/m06_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_S_AXI_ACP/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_S_AXI_ACP/s00_couplers/s00_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_S_AXI_ACP/s01_couplers/s01_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_S_AXI_ACP/s01_couplers/s01_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_S_AXI_ACP/s02_couplers/s02_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_S_AXI_ACP/s02_couplers/s02_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_S_AXI_ACP/s03_couplers/s03_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_S_AXI_ACP/s03_couplers/s03_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_S_AXI_ACP/s04_couplers/s04_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_S_AXI_ACP/s04_couplers/s04_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_S_AXI_ACP/s05_couplers/s05_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_S_AXI_ACP/s05_couplers/s05_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_S_AXI_ACP/m00_couplers/m00_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_S_AXI_ACP/m00_couplers/m00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bare_i/axi_ic_ps7_0_S_AXI_ACP/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2014.688 ; gain = 247.457 ; free physical = 4149 ; free virtual = 8885
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2014.688 ; gain = 247.457 ; free physical = 4149 ; free virtual = 8887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2014.688 ; gain = 247.457 ; free physical = 4136 ; free virtual = 8876
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'bare_i/ps7_0/FCLK_CLK0' to pin 'bare_i/ps7_0/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'bare_i/ps7_0/FCLK_CLK1' to pin 'bare_i/ps7_0/bbstub_FCLK_CLK1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'bare_i/ps7_0/FCLK_CLK2' to pin 'bare_i/ps7_0/bbstub_FCLK_CLK2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'bare_i/ps7_0/FCLK_CLK3' to pin 'bare_i/ps7_0/bbstub_FCLK_CLK3/O'
+INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2014.688 ; gain = 247.457 ; free physical = 4012 ; free virtual = 8753
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2014.688 ; gain = 247.457 ; free physical = 4012 ; free virtual = 8752
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2014.688 ; gain = 247.457 ; free physical = 4010 ; free virtual = 8750
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2014.688 ; gain = 247.457 ; free physical = 4009 ; free virtual = 8750
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2014.688 ; gain = 247.457 ; free physical = 4009 ; free virtual = 8750
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2014.688 ; gain = 247.457 ; free physical = 4009 ; free virtual = 8750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2014.688 ; gain = 247.457 ; free physical = 4009 ; free virtual = 8750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2014.688 ; gain = 247.457 ; free physical = 4009 ; free virtual = 8750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2014.688 ; gain = 247.457 ; free physical = 4009 ; free virtual = 8750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------+----------+
+|      |BlackBox name             |Instances |
++------+--------------------------+----------+
+|1     |bare_xbar_0               |         1|
+|2     |bare_m00_regslice_0       |         1|
+|3     |bare_m01_regslice_0       |         1|
+|4     |bare_m02_regslice_0       |         1|
+|5     |bare_m03_regslice_0       |         1|
+|6     |bare_m04_regslice_0       |         1|
+|7     |bare_m05_regslice_0       |         1|
+|8     |bare_m06_regslice_0       |         1|
+|9     |bare_auto_pc_0            |         1|
+|10    |bare_s00_data_fifo_0      |         1|
+|11    |bare_s00_regslice_0       |         1|
+|12    |bare_xbar_1               |         1|
+|13    |bare_auto_pc_1            |         1|
+|14    |bare_m00_data_fifo_0      |         1|
+|15    |bare_m00_regslice_1       |         1|
+|16    |bare_s00_data_fifo_1      |         1|
+|17    |bare_s00_regslice_1       |         1|
+|18    |bare_s01_data_fifo_0      |         1|
+|19    |bare_s01_regslice_0       |         1|
+|20    |bare_s02_data_fifo_0      |         1|
+|21    |bare_s02_regslice_0       |         1|
+|22    |bare_s03_data_fifo_0      |         1|
+|23    |bare_s03_regslice_0       |         1|
+|24    |bare_s04_data_fifo_0      |         1|
+|25    |bare_s04_regslice_0       |         1|
+|26    |bare_s05_data_fifo_0      |         1|
+|27    |bare_s05_regslice_0       |         1|
+|28    |bare_MLP_1_0              |         1|
+|29    |bare_MLP_1_if_0           |         1|
+|30    |bare_axis_dwc_dm_0_tx_0_0 |         1|
+|31    |bare_axis_dwc_dm_1_tx_0_0 |         1|
+|32    |bare_axis_dwc_dm_2_tx_0_0 |         1|
+|33    |bare_axis_dwc_dm_3_tx_0_0 |         1|
+|34    |bare_axis_dwc_dm_4_tx_0_0 |         1|
+|35    |bare_axis_dwc_dm_5_rx_0_0 |         1|
+|36    |bare_dm_0_0               |         1|
+|37    |bare_dm_1_0               |         1|
+|38    |bare_dm_2_0               |         1|
+|39    |bare_dm_3_0               |         1|
+|40    |bare_dm_4_0               |         1|
+|41    |bare_dm_5_0               |         1|
+|42    |bare_ps7_0_0              |         1|
+|43    |bare_rst_ps7_0_fclk0_0    |         1|
+|44    |bare_rst_ps7_0_fclk1_0    |         1|
+|45    |bare_rst_ps7_0_fclk2_0    |         1|
+|46    |bare_rst_ps7_0_fclk3_0    |         1|
++------+--------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------+------+
+|      |Cell                      |Count |
++------+--------------------------+------+
+|1     |bare_MLP_1_0              |     1|
+|2     |bare_MLP_1_if_0           |     1|
+|3     |bare_auto_pc_0            |     1|
+|4     |bare_auto_pc_1            |     1|
+|5     |bare_axis_dwc_dm_0_tx_0_0 |     1|
+|6     |bare_axis_dwc_dm_1_tx_0_0 |     1|
+|7     |bare_axis_dwc_dm_2_tx_0_0 |     1|
+|8     |bare_axis_dwc_dm_3_tx_0_0 |     1|
+|9     |bare_axis_dwc_dm_4_tx_0_0 |     1|
+|10    |bare_axis_dwc_dm_5_rx_0_0 |     1|
+|11    |bare_dm_0_0               |     1|
+|12    |bare_dm_1_0               |     1|
+|13    |bare_dm_2_0               |     1|
+|14    |bare_dm_3_0               |     1|
+|15    |bare_dm_4_0               |     1|
+|16    |bare_dm_5_0               |     1|
+|17    |bare_m00_data_fifo_0      |     1|
+|18    |bare_m00_regslice_0       |     1|
+|19    |bare_m00_regslice_1       |     1|
+|20    |bare_m01_regslice_0       |     1|
+|21    |bare_m02_regslice_0       |     1|
+|22    |bare_m03_regslice_0       |     1|
+|23    |bare_m04_regslice_0       |     1|
+|24    |bare_m05_regslice_0       |     1|
+|25    |bare_m06_regslice_0       |     1|
+|26    |bare_ps7_0_0              |     1|
+|27    |bare_rst_ps7_0_fclk0_0    |     1|
+|28    |bare_rst_ps7_0_fclk1_0    |     1|
+|29    |bare_rst_ps7_0_fclk2_0    |     1|
+|30    |bare_rst_ps7_0_fclk3_0    |     1|
+|31    |bare_s00_data_fifo_0      |     1|
+|32    |bare_s00_data_fifo_1      |     1|
+|33    |bare_s00_regslice_0       |     1|
+|34    |bare_s00_regslice_1       |     1|
+|35    |bare_s01_data_fifo_0      |     1|
+|36    |bare_s01_regslice_0       |     1|
+|37    |bare_s02_data_fifo_0      |     1|
+|38    |bare_s02_regslice_0       |     1|
+|39    |bare_s03_data_fifo_0      |     1|
+|40    |bare_s03_regslice_0       |     1|
+|41    |bare_s04_data_fifo_0      |     1|
+|42    |bare_s04_regslice_0       |     1|
+|43    |bare_s05_data_fifo_0      |     1|
+|44    |bare_s05_regslice_0       |     1|
+|45    |bare_xbar_0               |     1|
+|46    |bare_xbar_1               |     1|
++------+--------------------------+------+
+
+Report Instance Areas: 
++------+---------------------------+------------------------------+------+
+|      |Instance                   |Module                        |Cells |
++------+---------------------------+------------------------------+------+
+|1     |top                        |                              |  7125|
+|2     |  bare_i                   |bare                          |  7125|
+|3     |    axcache_0xE            |bare_axcache_0xE_0            |     0|
+|4     |    axi_ic_ps7_0_M_AXI_GP0 |bare_axi_ic_ps7_0_M_AXI_GP0_0 |  2199|
+|5     |      m00_couplers         |m00_couplers_imp_SLWXU2       |   152|
+|6     |      m01_couplers         |m01_couplers_imp_1XDZ8ZG      |   108|
+|7     |      m02_couplers         |m02_couplers_imp_11B2G2V      |   108|
+|8     |      m03_couplers         |m03_couplers_imp_7MHG29       |   108|
+|9     |      m04_couplers         |m04_couplers_imp_Z5Q0R5       |   108|
+|10    |      m05_couplers         |m05_couplers_imp_1R6NMZR      |   108|
+|11    |      m06_couplers         |m06_couplers_imp_18CPEYK      |   108|
+|12    |      s00_couplers         |s00_couplers_imp_18VLYF3      |   581|
+|13    |    axi_ic_ps7_0_S_AXI_ACP |bare_axi_ic_ps7_0_S_AXI_ACP_0 |  3126|
+|14    |      m00_couplers         |m00_couplers_imp_W9AT5L       |   836|
+|15    |      s00_couplers         |s00_couplers_imp_1DN0B3G      |   264|
+|16    |      s01_couplers         |s01_couplers_imp_DAK4M2       |   264|
+|17    |      s02_couplers         |s02_couplers_imp_N6FX4X       |   264|
+|18    |      s03_couplers         |s03_couplers_imp_1LAWVSN      |   264|
+|19    |      s04_couplers         |s04_couplers_imp_1BJ0RW7      |   264|
+|20    |      s05_couplers         |s05_couplers_imp_F22A0X       |   284|
+|21    |    constant0              |bare_constant0_0              |     0|
+|22    |    sds_irq_const          |bare_sds_irq_const_0          |     0|
+|23    |    xlconcat_0             |bare_xlconcat_0_0             |     0|
++------+---------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2014.688 ; gain = 247.457 ; free physical = 4009 ; free virtual = 8750
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2014.688 ; gain = 0.000 ; free physical = 4066 ; free virtual = 8806
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2014.695 ; gain = 247.457 ; free physical = 4076 ; free virtual = 8816
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2014.695 ; gain = 0.000 ; free physical = 4001 ; free virtual = 8742
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+165 Infos, 135 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2014.695 ; gain = 247.582 ; free physical = 4049 ; free virtual = 8790
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2014.695 ; gain = 0.000 ; free physical = 4049 ; free virtual = 8790
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/synth_1/bare_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bare_wrapper_utilization_synth.rpt -pb bare_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 14 15:50:23 2019...

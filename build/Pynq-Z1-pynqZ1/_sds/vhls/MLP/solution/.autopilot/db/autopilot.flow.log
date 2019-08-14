@@ -1,0 +1,1490 @@
+INFO-FLOW: Workspace /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution opened at Wed Aug 14 15:39:22 EDT 2019
+Execute   set_part  xc7z020clg400-1  
+Execute     add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed medium 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Command       import_lib done; 0.11 sec.
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.15 sec.
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.15 sec.
+Command       ap_source done; 0.16 sec.
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed slow 
+Command     add_library done; 0.35 sec.
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO: [HLS 200-10] Setting target device to ' xc7z020clg400-1 '
+Execute     get_default_platform 
+Command   set_part done; 0.43 sec.
+Execute   create_clock -period 10.000000 
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   config_sdx -target sds 
+Execute     send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_sdx -optimization_level=0 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=0
+Execute     config_sdx -optimization_level=0 
+Execute       get_config_export -vivado_synth_design_args 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_synth_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -optimization_level' config_export -vivado_phys_opt=none 
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_phys_opt=none
+Execute       config_export -vivado_phys_opt=none 
+Execute       get_config_bind -effort 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -optimization_level' config_bind -effort=medium 
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_bind -effort=medium
+Execute       config_bind -effort=medium 
+Execute       get_config_schedule -effort 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -optimization_level' config_schedule -effort=medium 
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_schedule -effort=medium
+Execute       config_schedule -effort=medium 
+Execute     get_config_compile -pipeline_loops 
+Execute     get_config_compile -name_max_length 
+Execute     get_config_schedule -relax_ii_for_timing 
+Execute     send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_schedule -relax_ii_for_timing=0 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_schedule -relax_ii_for_timing=0
+Execute     config_schedule -relax_ii_for_timing=0 
+Execute     get_config_schedule -enable_dsp_full_reg 
+Execute     get_config_rtl -register_reset_num 
+Execute     get_config_rtl -auto_prefix 
+Execute     send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_rtl -auto_prefix=1 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_rtl -auto_prefix=1
+Execute     config_rtl -auto_prefix=1 
+Execute     get_config_rtl -enable_maxiConservative 
+Execute     get_config_interface -m_axi_addr64 
+Execute     send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty 27% 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty 27%
+Execute     set_clock_uncertainty 27% 
+Execute       get_clock_period -default -name=default 
+Execute       config_clock -quiet -name default -uncertainty 2.7 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2.7ns.
+Execute   config_rtl -reset_level low 
+Execute   source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP.tcl 
+Execute     set_directive_interface -mode ap_fifo MLP out 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredout 
+Execute     set_directive_interface -mode ap_fifo MLP l2_b 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredout 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl2_b 
+Execute     set_directive_interface -mode ap_fifo MLP image 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredout 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl2_b 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredimage 
+Execute     set_directive_interface -mode ap_fifo MLP l1_b 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredout 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl2_b 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredimage 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl1_b 
+Execute     set_directive_interface -mode ap_fifo MLP l1_w 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredout 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl2_b 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredimage 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl1_b 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl1_w 
+Execute     set_directive_interface -mode ap_fifo MLP l2_w 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredout 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl2_b 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredimage 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl1_b 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl1_w 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl2_w 
+Execute     set_directive_latency -min 1 MLP 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredout 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl2_b 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredimage 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl1_b 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl1_w 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl2_w 
+INFO-FLOW: Setting directive 'LATENCY' min=1 
+Execute   config_rtl -prefix a0_ 
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     config_compile -blackbox  
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file '/home/steve/Graduate_Research/MLP/src/mlp.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling /home/steve/Graduate_Research/MLP/src/mlp.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted /home/steve/Graduate_Research/MLP/src/mlp.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "/home/steve/Graduate_Research/MLP/src/mlp.cpp"   -I/home/steve/Graduate_Research/MLP/inc -Wall -O3 -fPIC -D__HW__ -D__SDSCC__ -m32 -DHLS_NO_XIL_FPO_LIB -I/tools/Xilinx/SDx/2018.3/target/aarch32-linux/include -I/home/steve/Graduate_Research/MLP/src -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1 -w  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pp.0.cpp" 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E /home/steve/Graduate_Research/MLP/src/mlp.cpp -I/home/steve/Graduate_Research/MLP/inc -Wall -O3 -fPIC -D__HW__ -D__SDSCC__ -m32 -DHLS_NO_XIL_FPO_LIB -I/tools/Xilinx/SDx/2018.3/target/aarch32-linux/include -I/home/steve/Graduate_Research/MLP/src -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1 -w -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pp.0.cpp
+Command       clang done; 1.43 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.43 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls  -I/home/steve/Graduate_Research/MLP/inc -Wall -O3 -fPIC -D__HW__ -D__SDSCC__ -m32 -DHLS_NO_XIL_FPO_LIB -I/tools/Xilinx/SDx/2018.3/target/aarch32-linux/include -I/home/steve/Graduate_Research/MLP/src -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1 -w  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pp.0.cpp"  -o "/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -I/home/steve/Graduate_Research/MLP/inc -Wall -O3 -fPIC -D__HW__ -D__SDSCC__ -m32 -DHLS_NO_XIL_FPO_LIB -I/tools/Xilinx/SDx/2018.3/target/aarch32-linux/include -I/home/steve/Graduate_Research/MLP/src -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1 -w -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pp.0.cpp -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/useless.bc
+Command       clang done; 1.2 sec.
+INFO-FLOW: Done: GCC PP time: 3.1 seconds per iteration
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredout 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl2_b 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredimage 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl1_b 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl1_w 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl2_w 
+INFO-FLOW: Setting directive 'LATENCY' min=1 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredout 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl2_b 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredimage 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl1_b 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl1_w 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequiredl2_w 
+INFO-FLOW: Setting directive 'LATENCY' min=1 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pp.0.cpp std=gnu++98 -directive=/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/.systemc_flag -quiet -fix-errors /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pp.0.cpp std=gnu++98 -directive=/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/all.directive.json -quiet -fix-errors /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.2 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/xilinx-dataflow-lawyer.mlp.pp.0.cpp.diag.yml /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/xilinx-dataflow-lawyer.mlp.pp.0.cpp.out.log 2> /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/xilinx-dataflow-lawyer.mlp.pp.0.cpp.err.log 
+Command       ap_eval done; 0.39 sec.
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/steve/Graduate_Research/MLP/src/mlp-util.hpp:9:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/steve/Graduate_Research/MLP/src/mlp-util.hpp:19:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/steve/Graduate_Research/MLP/src/mlp-util.hpp:29:2
+Execute       send_msg_by_id WARNING @200-471@%s%s 3 /home/steve/Graduate_Research/MLP/src/mlp.cpp 
+WARNING: [HLS 200-471] Dataflow form checks found 3 issue(s) in file /home/steve/Graduate_Research/MLP/src/mlp.cpp
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/tidy-3.1.mlp.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/tidy-3.1.mlp.pp.0.cpp.out.log 2> /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/tidy-3.1.mlp.pp.0.cpp.err.log 
+Command         ap_eval done; 0.23 sec.
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/xilinx-legacy-rewriter.mlp.pp.0.cpp.out.log 2> /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/xilinx-legacy-rewriter.mlp.pp.0.cpp.err.log 
+Command         ap_eval done; 0.42 sec.
+Command       tidy_31 done; 0.67 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1.3 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.23 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pragma.2.cpp"  -I/home/steve/Graduate_Research/MLP/inc -Wall -O3 -fPIC -D__HW__ -D__SDSCC__ -m32 -DHLS_NO_XIL_FPO_LIB -I/tools/Xilinx/SDx/2018.3/target/aarch32-linux/include -I/home/steve/Graduate_Research/MLP/src -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1 -w  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.bc" 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.pragma.2.cpp -I/home/steve/Graduate_Research/MLP/inc -Wall -O3 -fPIC -D__HW__ -D__SDSCC__ -m32 -DHLS_NO_XIL_FPO_LIB -I/tools/Xilinx/SDx/2018.3/target/aarch32-linux/include -I/home/steve/Graduate_Research/MLP/src -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1 -w -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot -I /tools/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.bc
+Command       clang done; 1.1 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/mlp.g.bc -hls-opt -except-internalize MLP -L/tools/Xilinx/Vivado/2018.3/lnx64/lib -lhlsm -lhlsmc++ -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.g 
+Command       llvm-ld done; 0.69 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 435.074 ; gain = 0.117 ; free physical = 5173 ; free virtual = 10709
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 435.074 ; gain = 0.117 ; free physical = 5173 ; free virtual = 10710
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.pp.bc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.13 sec.
+Execute         llvm-ld /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.pp.0.bc -disable-opt -L/tools/Xilinx/Vivado/2018.3/lnx64/lib -lfloatconversion -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.55 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top MLP -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.g.0.bc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 1.89 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 435.102 ; gain = 0.145 ; free physical = 5152 ; free virtual = 10690
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.g.1.bc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'fullyConnected.1' into 'MLP' (/home/steve/Graduate_Research/MLP/src/mlp.cpp:45) automatically.
+INFO: [XFORM 203-602] Inlining function 'fullyConnected' into 'MLP' (/home/steve/Graduate_Research/MLP/src/mlp.cpp:46) automatically.
+Command         transform done; 2.75 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.g.2.prechk.bc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 563.102 ; gain = 128.145 ; free physical = 5159 ; free virtual = 10690
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.g.1.bc to /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.o.1.bc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-602] Inlining function 'fullyConnected.1' into 'MLP' (/home/steve/Graduate_Research/MLP/src/mlp.cpp:45) automatically.
+INFO: [XFORM 203-602] Inlining function 'fullyConnected' into 'MLP' (/home/steve/Graduate_Research/MLP/src/mlp.cpp:46) automatically.
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:9) to a process function for dataflow in function 'read_image_from_ddr'.
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:19) to a process function for dataflow in function 'read_from_ddr.3'.
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:19) to a process function for dataflow in function 'read_from_ddr.2'.
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:19) to a process function for dataflow in function 'read_from_ddr.1'.
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:19) to a process function for dataflow in function 'read_from_ddr'.
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:29) to a process function for dataflow in function 'output_results'.
+INFO: [XFORM 203-712] Applying dataflow to function 'read_image_from_ddr', detected/extracted 1 process function(s): 
+	 'read_image_from_ddr_Loop_1_proc'.
+INFO: [XFORM 203-712] Applying dataflow to function 'read_from_ddr.3', detected/extracted 1 process function(s): 
+	 'read_from_ddr.3_Loop_1_proc'.
+INFO: [XFORM 203-712] Applying dataflow to function 'read_from_ddr.2', detected/extracted 1 process function(s): 
+	 'read_from_ddr.2_Loop_1_proc'.
+INFO: [XFORM 203-712] Applying dataflow to function 'read_from_ddr.1', detected/extracted 1 process function(s): 
+	 'read_from_ddr.1_Loop_1_proc'.
+INFO: [XFORM 203-712] Applying dataflow to function 'read_from_ddr', detected/extracted 1 process function(s): 
+	 'read_from_ddr_Loop_1_proc'.
+INFO: [XFORM 203-712] Applying dataflow to function 'output_results', detected/extracted 1 process function(s): 
+	 'output_results_Loop_1_proc'.
+Command         transform done; 2.88 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.o.1.tmp.bc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 563.102 ; gain = 128.145 ; free physical = 5109 ; free virtual = 10646
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -licm -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -cdfg-build /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.o.2.bc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-631] Renaming function 'read_image_from_ddr_Loop_1_proc' to 'read_image_from_ddr_' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:9:28)
+WARNING: [XFORM 203-631] Renaming function 'read_from_ddr_Loop_1_proc' to 'read_from_ddr_Loop_1' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:19:28)
+WARNING: [XFORM 203-631] Renaming function 'read_from_ddr.3_Loop_1_proc' to 'read_from_ddr.3_Loop' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:19:28)
+WARNING: [XFORM 203-631] Renaming function 'read_from_ddr.2_Loop_1_proc' to 'read_from_ddr.2_Loop' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:19:28)
+WARNING: [XFORM 203-631] Renaming function 'read_from_ddr.1_Loop_1_proc' to 'read_from_ddr.1_Loop' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:19:28)
+WARNING: [XFORM 203-631] Renaming function 'output_results_Loop_1_proc' to 'output_results_Loop_' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:29:26)
+Command         transform done; 0.67 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 626.957 ; gain = 192.000 ; free physical = 5008 ; free virtual = 10545
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 9.01 sec.
+Command     elaborate done; 15.62 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'MLP' ...
+Execute       ap_set_top_model MLP 
+WARNING: [SYN 201-103] Legalizing function name 'read_image_from_ddr_' to 'read_image_from_ddr_s'.
+WARNING: [SYN 201-103] Legalizing function name 'read_from_ddr.3_Loop' to 'read_from_ddr_3_Loop'.
+WARNING: [SYN 201-103] Legalizing function name 'read_from_ddr.3' to 'read_from_ddr_3'.
+WARNING: [SYN 201-103] Legalizing function name 'read_from_ddr.2_Loop' to 'read_from_ddr_2_Loop'.
+WARNING: [SYN 201-103] Legalizing function name 'read_from_ddr.2' to 'read_from_ddr_2'.
+WARNING: [SYN 201-103] Legalizing function name 'read_from_ddr.1_Loop' to 'read_from_ddr_1_Loop'.
+WARNING: [SYN 201-103] Legalizing function name 'read_from_ddr.1' to 'read_from_ddr_1'.
+WARNING: [SYN 201-103] Legalizing function name 'output_results_Loop_' to 'output_results_Loop_s'.
+Execute       get_model_list MLP -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model MLP 
+Execute       preproc_iomode -model output_results 
+Execute       preproc_iomode -model output_results_Loop_ 
+Execute       preproc_iomode -model read_from_ddr 
+Execute       preproc_iomode -model read_from_ddr_Loop_1 
+Execute       preproc_iomode -model read_from_ddr.1 
+Execute       preproc_iomode -model read_from_ddr.1_Loop 
+Execute       preproc_iomode -model read_from_ddr.2 
+Execute       preproc_iomode -model read_from_ddr.2_Loop 
+Execute       preproc_iomode -model read_from_ddr.3 
+Execute       preproc_iomode -model read_from_ddr.3_Loop 
+Execute       preproc_iomode -model read_image_from_ddr 
+Execute       preproc_iomode -model read_image_from_ddr_ 
+Execute       get_model_list MLP -filter all-wo-channel 
+INFO-FLOW: Model list for configure: read_image_from_ddr_ read_image_from_ddr read_from_ddr.3_Loop read_from_ddr.3 read_from_ddr.2_Loop read_from_ddr.2 read_from_ddr.1_Loop read_from_ddr.1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_ output_results MLP
+INFO-FLOW: Configuring Module : read_image_from_ddr_ ...
+Execute       set_default_model read_image_from_ddr_ 
+Execute       apply_spec_resource_limit read_image_from_ddr_ 
+INFO-FLOW: Configuring Module : read_image_from_ddr ...
+Execute       set_default_model read_image_from_ddr 
+Execute       apply_spec_resource_limit read_image_from_ddr 
+INFO-FLOW: Configuring Module : read_from_ddr.3_Loop ...
+Execute       set_default_model read_from_ddr.3_Loop 
+Execute       apply_spec_resource_limit read_from_ddr.3_Loop 
+INFO-FLOW: Configuring Module : read_from_ddr.3 ...
+Execute       set_default_model read_from_ddr.3 
+Execute       apply_spec_resource_limit read_from_ddr.3 
+INFO-FLOW: Configuring Module : read_from_ddr.2_Loop ...
+Execute       set_default_model read_from_ddr.2_Loop 
+Execute       apply_spec_resource_limit read_from_ddr.2_Loop 
+INFO-FLOW: Configuring Module : read_from_ddr.2 ...
+Execute       set_default_model read_from_ddr.2 
+Execute       apply_spec_resource_limit read_from_ddr.2 
+INFO-FLOW: Configuring Module : read_from_ddr.1_Loop ...
+Execute       set_default_model read_from_ddr.1_Loop 
+Execute       apply_spec_resource_limit read_from_ddr.1_Loop 
+INFO-FLOW: Configuring Module : read_from_ddr.1 ...
+Execute       set_default_model read_from_ddr.1 
+Execute       apply_spec_resource_limit read_from_ddr.1 
+INFO-FLOW: Configuring Module : read_from_ddr_Loop_1 ...
+Execute       set_default_model read_from_ddr_Loop_1 
+Execute       apply_spec_resource_limit read_from_ddr_Loop_1 
+INFO-FLOW: Configuring Module : read_from_ddr ...
+Execute       set_default_model read_from_ddr 
+Execute       apply_spec_resource_limit read_from_ddr 
+INFO-FLOW: Configuring Module : output_results_Loop_ ...
+Execute       set_default_model output_results_Loop_ 
+Execute       apply_spec_resource_limit output_results_Loop_ 
+INFO-FLOW: Configuring Module : output_results ...
+Execute       set_default_model output_results 
+Execute       apply_spec_resource_limit output_results 
+INFO-FLOW: Configuring Module : MLP ...
+Execute       set_default_model MLP 
+Execute       apply_spec_resource_limit MLP 
+INFO-FLOW: Model list for preprocess: read_image_from_ddr_ read_image_from_ddr read_from_ddr.3_Loop read_from_ddr.3 read_from_ddr.2_Loop read_from_ddr.2 read_from_ddr.1_Loop read_from_ddr.1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_ output_results MLP
+INFO-FLOW: Preprocessing Module: read_image_from_ddr_ ...
+Execute       set_default_model read_image_from_ddr_ 
+Execute       cdfg_preprocess -model read_image_from_ddr_ 
+Execute       rtl_gen_preprocess read_image_from_ddr_ 
+INFO-FLOW: Preprocessing Module: read_image_from_ddr ...
+Execute       set_default_model read_image_from_ddr 
+Execute       cdfg_preprocess -model read_image_from_ddr 
+Execute       rtl_gen_preprocess read_image_from_ddr 
+INFO-FLOW: Preprocessing Module: read_from_ddr.3_Loop ...
+Execute       set_default_model read_from_ddr.3_Loop 
+Execute       cdfg_preprocess -model read_from_ddr.3_Loop 
+Execute       rtl_gen_preprocess read_from_ddr.3_Loop 
+INFO-FLOW: Preprocessing Module: read_from_ddr.3 ...
+Execute       set_default_model read_from_ddr.3 
+Execute       cdfg_preprocess -model read_from_ddr.3 
+Execute       rtl_gen_preprocess read_from_ddr.3 
+INFO-FLOW: Preprocessing Module: read_from_ddr.2_Loop ...
+Execute       set_default_model read_from_ddr.2_Loop 
+Execute       cdfg_preprocess -model read_from_ddr.2_Loop 
+Execute       rtl_gen_preprocess read_from_ddr.2_Loop 
+INFO-FLOW: Preprocessing Module: read_from_ddr.2 ...
+Execute       set_default_model read_from_ddr.2 
+Execute       cdfg_preprocess -model read_from_ddr.2 
+Execute       rtl_gen_preprocess read_from_ddr.2 
+INFO-FLOW: Preprocessing Module: read_from_ddr.1_Loop ...
+Execute       set_default_model read_from_ddr.1_Loop 
+Execute       cdfg_preprocess -model read_from_ddr.1_Loop 
+Execute       rtl_gen_preprocess read_from_ddr.1_Loop 
+INFO-FLOW: Preprocessing Module: read_from_ddr.1 ...
+Execute       set_default_model read_from_ddr.1 
+Execute       cdfg_preprocess -model read_from_ddr.1 
+Execute       rtl_gen_preprocess read_from_ddr.1 
+INFO-FLOW: Preprocessing Module: read_from_ddr_Loop_1 ...
+Execute       set_default_model read_from_ddr_Loop_1 
+Execute       cdfg_preprocess -model read_from_ddr_Loop_1 
+Execute       rtl_gen_preprocess read_from_ddr_Loop_1 
+INFO-FLOW: Preprocessing Module: read_from_ddr ...
+Execute       set_default_model read_from_ddr 
+Execute       cdfg_preprocess -model read_from_ddr 
+Execute       rtl_gen_preprocess read_from_ddr 
+INFO-FLOW: Preprocessing Module: output_results_Loop_ ...
+Execute       set_default_model output_results_Loop_ 
+Execute       cdfg_preprocess -model output_results_Loop_ 
+Execute       rtl_gen_preprocess output_results_Loop_ 
+INFO-FLOW: Preprocessing Module: output_results ...
+Execute       set_default_model output_results 
+Execute       cdfg_preprocess -model output_results 
+Execute       rtl_gen_preprocess output_results 
+INFO-FLOW: Preprocessing Module: MLP ...
+Execute       set_default_model MLP 
+Execute       cdfg_preprocess -model MLP 
+Execute       rtl_gen_preprocess MLP 
+WARNING: [SYN 201-107] Renaming port name 'MLP/image' to 'MLP/image_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'MLP/out' to 'MLP/out_r' to avoid the conflict with HDL keywords or other object names.
+INFO-FLOW: Model list for synthesis: read_image_from_ddr_ read_image_from_ddr read_from_ddr.3_Loop read_from_ddr.3 read_from_ddr.2_Loop read_from_ddr.2 read_from_ddr.1_Loop read_from_ddr.1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_ output_results MLP
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_image_from_ddr_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model read_image_from_ddr_ 
+Execute       schedule -model read_image_from_ddr_ 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 16.76 seconds; current allocated memory: 200.019 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr_s.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr_s.sched.adb -f 
+INFO-FLOW: Finish scheduling read_image_from_ddr_.
+Execute       set_default_model read_image_from_ddr_ 
+Execute       bind -model read_image_from_ddr_ 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=read_image_from_ddr_
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 200.112 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr_s.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr_s.bind.adb -f 
+INFO-FLOW: Finish binding read_image_from_ddr_.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_image_from_ddr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model read_image_from_ddr 
+Execute       schedule -model read_image_from_ddr 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 200.161 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr.sched.adb -f 
+INFO-FLOW: Finish scheduling read_image_from_ddr.
+Execute       set_default_model read_image_from_ddr 
+Execute       bind -model read_image_from_ddr 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=read_image_from_ddr
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 200.206 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr.bind.adb -f 
+INFO-FLOW: Finish binding read_image_from_ddr.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_from_ddr_3_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model read_from_ddr.3_Loop 
+Execute       schedule -model read_from_ddr.3_Loop 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 200.270 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3_Loop.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3_Loop.sched.adb -f 
+INFO-FLOW: Finish scheduling read_from_ddr.3_Loop.
+Execute       set_default_model read_from_ddr.3_Loop 
+Execute       bind -model read_from_ddr.3_Loop 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=read_from_ddr.3_Loop
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 200.392 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3_Loop.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3_Loop.bind.adb -f 
+INFO-FLOW: Finish binding read_from_ddr.3_Loop.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_from_ddr_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model read_from_ddr.3 
+Execute       schedule -model read_from_ddr.3 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 200.409 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3.sched.adb -f 
+INFO-FLOW: Finish scheduling read_from_ddr.3.
+Execute       set_default_model read_from_ddr.3 
+Execute       bind -model read_from_ddr.3 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=read_from_ddr.3
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0 seconds; current allocated memory: 200.455 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3.bind.adb -f 
+INFO-FLOW: Finish binding read_from_ddr.3.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_from_ddr_2_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model read_from_ddr.2_Loop 
+Execute       schedule -model read_from_ddr.2_Loop 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 200.519 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2_Loop.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2_Loop.sched.adb -f 
+INFO-FLOW: Finish scheduling read_from_ddr.2_Loop.
+Execute       set_default_model read_from_ddr.2_Loop 
+Execute       bind -model read_from_ddr.2_Loop 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=read_from_ddr.2_Loop
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 200.604 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2_Loop.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2_Loop.bind.adb -f 
+INFO-FLOW: Finish binding read_from_ddr.2_Loop.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_from_ddr_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model read_from_ddr.2 
+Execute       schedule -model read_from_ddr.2 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 200.637 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2.sched.adb -f 
+INFO-FLOW: Finish scheduling read_from_ddr.2.
+Execute       set_default_model read_from_ddr.2 
+Execute       bind -model read_from_ddr.2 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=read_from_ddr.2
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 200.682 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2.bind.adb -f 
+INFO-FLOW: Finish binding read_from_ddr.2.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_from_ddr_1_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model read_from_ddr.1_Loop 
+Execute       schedule -model read_from_ddr.1_Loop 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 200.731 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1_Loop.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1_Loop.sched.adb -f 
+INFO-FLOW: Finish scheduling read_from_ddr.1_Loop.
+Execute       set_default_model read_from_ddr.1_Loop 
+Execute       bind -model read_from_ddr.1_Loop 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=read_from_ddr.1_Loop
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 200.816 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1_Loop.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1_Loop.bind.adb -f 
+INFO-FLOW: Finish binding read_from_ddr.1_Loop.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_from_ddr_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model read_from_ddr.1 
+Execute       schedule -model read_from_ddr.1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 200.833 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1.sched.adb -f 
+INFO-FLOW: Finish scheduling read_from_ddr.1.
+Execute       set_default_model read_from_ddr.1 
+Execute       bind -model read_from_ddr.1 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=read_from_ddr.1
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 200.879 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1.bind.adb -f 
+INFO-FLOW: Finish binding read_from_ddr.1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_from_ddr_Loop_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model read_from_ddr_Loop_1 
+Execute       schedule -model read_from_ddr_Loop_1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 200.944 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_Loop_1.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_Loop_1.sched.adb -f 
+INFO-FLOW: Finish scheduling read_from_ddr_Loop_1.
+Execute       set_default_model read_from_ddr_Loop_1 
+Execute       bind -model read_from_ddr_Loop_1 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=read_from_ddr_Loop_1
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 201.029 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_Loop_1.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_Loop_1.bind.adb -f 
+INFO-FLOW: Finish binding read_from_ddr_Loop_1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_from_ddr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model read_from_ddr 
+Execute       schedule -model read_from_ddr 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 201.046 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr.sched.adb -f 
+INFO-FLOW: Finish scheduling read_from_ddr.
+Execute       set_default_model read_from_ddr 
+Execute       bind -model read_from_ddr 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=read_from_ddr
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0 seconds; current allocated memory: 201.091 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr.bind.adb -f 
+INFO-FLOW: Finish binding read_from_ddr.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'output_results_Loop_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model output_results_Loop_ 
+Execute       schedule -model output_results_Loop_ 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 201.143 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results_Loop_s.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results_Loop_s.sched.adb -f 
+INFO-FLOW: Finish scheduling output_results_Loop_.
+Execute       set_default_model output_results_Loop_ 
+Execute       bind -model output_results_Loop_ 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=output_results_Loop_
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 201.233 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results_Loop_s.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results_Loop_s.bind.adb -f 
+INFO-FLOW: Finish binding output_results_Loop_.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'output_results' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model output_results 
+Execute       schedule -model output_results 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 201.266 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results.sched.adb -f 
+INFO-FLOW: Finish scheduling output_results.
+Execute       set_default_model output_results 
+Execute       bind -model output_results 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=output_results
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 201.311 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results.bind.adb -f 
+INFO-FLOW: Finish binding output_results.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MLP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model MLP 
+Execute       schedule -model MLP 
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-71] Latency directive discarded for region MLP since it contains subloops.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 201.727 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 0 loops out of a total 4 loops have been pipelined in this design.
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.sched.adb -f 
+INFO-FLOW: Finish scheduling MLP.
+Execute       set_default_model MLP 
+Execute       bind -model MLP 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=MLP
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 202.172 MB.
+Execute       report -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.bind.adb -f 
+INFO-FLOW: Finish binding MLP.
+Execute       get_model_list MLP -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess read_image_from_ddr_ 
+Execute       rtl_gen_preprocess read_image_from_ddr 
+Execute       rtl_gen_preprocess read_from_ddr.3_Loop 
+Execute       rtl_gen_preprocess read_from_ddr.3 
+Execute       rtl_gen_preprocess read_from_ddr.2_Loop 
+Execute       rtl_gen_preprocess read_from_ddr.2 
+Execute       rtl_gen_preprocess read_from_ddr.1_Loop 
+Execute       rtl_gen_preprocess read_from_ddr.1 
+Execute       rtl_gen_preprocess read_from_ddr_Loop_1 
+Execute       rtl_gen_preprocess read_from_ddr 
+Execute       rtl_gen_preprocess output_results_Loop_ 
+Execute       rtl_gen_preprocess output_results 
+Execute       rtl_gen_preprocess MLP 
+INFO-FLOW: Model list for RTL generation: read_image_from_ddr_ read_image_from_ddr read_from_ddr.3_Loop read_from_ddr.3 read_from_ddr.2_Loop read_from_ddr.2 read_from_ddr.1_Loop read_from_ddr.1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_ output_results MLP
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_image_from_ddr_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model read_image_from_ddr_ -vendor xilinx -mg_file /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr_s.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_image_from_ddr_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 202.462 MB.
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute       gen_rtl read_image_from_ddr_ -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/systemc/a0_read_image_from_ddr_s -synmodules read_image_from_ddr_ read_image_from_ddr read_from_ddr.3_Loop read_from_ddr.3 read_from_ddr.2_Loop read_from_ddr.2 read_from_ddr.1_Loop read_from_ddr.1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_ output_results MLP 
+Execute       gen_rtl read_image_from_ddr_ -style xilinx -f -lang vhdl -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/vhdl/a0_read_image_from_ddr_s 
+Execute       gen_rtl read_image_from_ddr_ -style xilinx -f -lang vlog -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/verilog/a0_read_image_from_ddr_s 
+Execute       gen_tb_info read_image_from_ddr_ -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr_s -p /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db 
+Execute       report -model read_image_from_ddr_ -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_image_from_ddr_s_csynth.rpt -f 
+Execute       report -model read_image_from_ddr_ -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_image_from_ddr_s_csynth.xml -f -x 
+Execute       report -model read_image_from_ddr_ -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr_s.verbose.rpt -verbose -f 
+Execute       db_write -model read_image_from_ddr_ -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr_s.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_image_from_ddr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model read_image_from_ddr -vendor xilinx -mg_file /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_image_from_ddr'.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 202.916 MB.
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute       gen_rtl read_image_from_ddr -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/systemc/a0_read_image_from_ddr -synmodules read_image_from_ddr_ read_image_from_ddr read_from_ddr.3_Loop read_from_ddr.3 read_from_ddr.2_Loop read_from_ddr.2 read_from_ddr.1_Loop read_from_ddr.1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_ output_results MLP 
+Execute       gen_rtl read_image_from_ddr -style xilinx -f -lang vhdl -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/vhdl/a0_read_image_from_ddr 
+Execute       gen_rtl read_image_from_ddr -style xilinx -f -lang vlog -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/verilog/a0_read_image_from_ddr 
+Execute       gen_tb_info read_image_from_ddr -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr -p /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db 
+Execute       report -model read_image_from_ddr -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_image_from_ddr_csynth.rpt -f 
+Execute       report -model read_image_from_ddr -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_image_from_ddr_csynth.xml -f -x 
+Execute       report -model read_image_from_ddr -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr.verbose.rpt -verbose -f 
+Execute       db_write -model read_image_from_ddr -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_from_ddr_3_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model read_from_ddr.3_Loop -vendor xilinx -mg_file /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3_Loop.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_from_ddr_3_Loop'.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 203.229 MB.
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute       gen_rtl read_from_ddr.3_Loop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/systemc/a0_read_from_ddr_3_Loop -synmodules read_image_from_ddr_ read_image_from_ddr read_from_ddr.3_Loop read_from_ddr.3 read_from_ddr.2_Loop read_from_ddr.2 read_from_ddr.1_Loop read_from_ddr.1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_ output_results MLP 
+Execute       gen_rtl read_from_ddr.3_Loop -style xilinx -f -lang vhdl -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/vhdl/a0_read_from_ddr_3_Loop 
+Execute       gen_rtl read_from_ddr.3_Loop -style xilinx -f -lang vlog -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/verilog/a0_read_from_ddr_3_Loop 
+Execute       gen_tb_info read_from_ddr.3_Loop -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3_Loop -p /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db 
+Execute       report -model read_from_ddr.3_Loop -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_from_ddr_3_Loop_csynth.rpt -f 
+Execute       report -model read_from_ddr.3_Loop -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_from_ddr_3_Loop_csynth.xml -f -x 
+Execute       report -model read_from_ddr.3_Loop -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3_Loop.verbose.rpt -verbose -f 
+Execute       db_write -model read_from_ddr.3_Loop -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3_Loop.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_from_ddr_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model read_from_ddr.3 -vendor xilinx -mg_file /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_from_ddr_3'.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 203.610 MB.
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute       gen_rtl read_from_ddr.3 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/systemc/a0_read_from_ddr_3 -synmodules read_image_from_ddr_ read_image_from_ddr read_from_ddr.3_Loop read_from_ddr.3 read_from_ddr.2_Loop read_from_ddr.2 read_from_ddr.1_Loop read_from_ddr.1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_ output_results MLP 
+Execute       gen_rtl read_from_ddr.3 -style xilinx -f -lang vhdl -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/vhdl/a0_read_from_ddr_3 
+Execute       gen_rtl read_from_ddr.3 -style xilinx -f -lang vlog -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/verilog/a0_read_from_ddr_3 
+Execute       gen_tb_info read_from_ddr.3 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3 -p /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db 
+Execute       report -model read_from_ddr.3 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_from_ddr_3_csynth.rpt -f 
+Execute       report -model read_from_ddr.3 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_from_ddr_3_csynth.xml -f -x 
+Execute       report -model read_from_ddr.3 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3.verbose.rpt -verbose -f 
+Execute       db_write -model read_from_ddr.3 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_from_ddr_2_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model read_from_ddr.2_Loop -vendor xilinx -mg_file /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2_Loop.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_from_ddr_2_Loop'.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 203.952 MB.
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute       gen_rtl read_from_ddr.2_Loop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/systemc/a0_read_from_ddr_2_Loop -synmodules read_image_from_ddr_ read_image_from_ddr read_from_ddr.3_Loop read_from_ddr.3 read_from_ddr.2_Loop read_from_ddr.2 read_from_ddr.1_Loop read_from_ddr.1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_ output_results MLP 
+Execute       gen_rtl read_from_ddr.2_Loop -style xilinx -f -lang vhdl -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/vhdl/a0_read_from_ddr_2_Loop 
+Execute       gen_rtl read_from_ddr.2_Loop -style xilinx -f -lang vlog -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/verilog/a0_read_from_ddr_2_Loop 
+Execute       gen_tb_info read_from_ddr.2_Loop -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2_Loop -p /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db 
+Execute       report -model read_from_ddr.2_Loop -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_from_ddr_2_Loop_csynth.rpt -f 
+Execute       report -model read_from_ddr.2_Loop -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_from_ddr_2_Loop_csynth.xml -f -x 
+Execute       report -model read_from_ddr.2_Loop -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2_Loop.verbose.rpt -verbose -f 
+Execute       db_write -model read_from_ddr.2_Loop -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2_Loop.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_from_ddr_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model read_from_ddr.2 -vendor xilinx -mg_file /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_from_ddr_2'.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 204.343 MB.
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute       gen_rtl read_from_ddr.2 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/systemc/a0_read_from_ddr_2 -synmodules read_image_from_ddr_ read_image_from_ddr read_from_ddr.3_Loop read_from_ddr.3 read_from_ddr.2_Loop read_from_ddr.2 read_from_ddr.1_Loop read_from_ddr.1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_ output_results MLP 
+Execute       gen_rtl read_from_ddr.2 -style xilinx -f -lang vhdl -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/vhdl/a0_read_from_ddr_2 
+Execute       gen_rtl read_from_ddr.2 -style xilinx -f -lang vlog -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/verilog/a0_read_from_ddr_2 
+Execute       gen_tb_info read_from_ddr.2 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2 -p /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db 
+Execute       report -model read_from_ddr.2 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_from_ddr_2_csynth.rpt -f 
+Execute       report -model read_from_ddr.2 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_from_ddr_2_csynth.xml -f -x 
+Execute       report -model read_from_ddr.2 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2.verbose.rpt -verbose -f 
+Execute       db_write -model read_from_ddr.2 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_from_ddr_1_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model read_from_ddr.1_Loop -vendor xilinx -mg_file /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1_Loop.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_from_ddr_1_Loop'.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 204.627 MB.
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute       gen_rtl read_from_ddr.1_Loop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/systemc/a0_read_from_ddr_1_Loop -synmodules read_image_from_ddr_ read_image_from_ddr read_from_ddr.3_Loop read_from_ddr.3 read_from_ddr.2_Loop read_from_ddr.2 read_from_ddr.1_Loop read_from_ddr.1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_ output_results MLP 
+Execute       gen_rtl read_from_ddr.1_Loop -style xilinx -f -lang vhdl -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/vhdl/a0_read_from_ddr_1_Loop 
+Execute       gen_rtl read_from_ddr.1_Loop -style xilinx -f -lang vlog -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/verilog/a0_read_from_ddr_1_Loop 
+Execute       gen_tb_info read_from_ddr.1_Loop -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1_Loop -p /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db 
+Execute       report -model read_from_ddr.1_Loop -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_from_ddr_1_Loop_csynth.rpt -f 
+Execute       report -model read_from_ddr.1_Loop -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_from_ddr_1_Loop_csynth.xml -f -x 
+Execute       report -model read_from_ddr.1_Loop -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1_Loop.verbose.rpt -verbose -f 
+Execute       db_write -model read_from_ddr.1_Loop -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1_Loop.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_from_ddr_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model read_from_ddr.1 -vendor xilinx -mg_file /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_from_ddr_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 205.032 MB.
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute       gen_rtl read_from_ddr.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/systemc/a0_read_from_ddr_1 -synmodules read_image_from_ddr_ read_image_from_ddr read_from_ddr.3_Loop read_from_ddr.3 read_from_ddr.2_Loop read_from_ddr.2 read_from_ddr.1_Loop read_from_ddr.1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_ output_results MLP 
+Execute       gen_rtl read_from_ddr.1 -style xilinx -f -lang vhdl -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/vhdl/a0_read_from_ddr_1 
+Execute       gen_rtl read_from_ddr.1 -style xilinx -f -lang vlog -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/verilog/a0_read_from_ddr_1 
+Execute       gen_tb_info read_from_ddr.1 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1 -p /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db 
+Execute       report -model read_from_ddr.1 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_from_ddr_1_csynth.rpt -f 
+Execute       report -model read_from_ddr.1 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_from_ddr_1_csynth.xml -f -x 
+Execute       report -model read_from_ddr.1 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1.verbose.rpt -verbose -f 
+Execute       db_write -model read_from_ddr.1 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_from_ddr_Loop_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model read_from_ddr_Loop_1 -vendor xilinx -mg_file /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_Loop_1.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_from_ddr_Loop_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 205.331 MB.
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute       gen_rtl read_from_ddr_Loop_1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/systemc/a0_read_from_ddr_Loop_1 -synmodules read_image_from_ddr_ read_image_from_ddr read_from_ddr.3_Loop read_from_ddr.3 read_from_ddr.2_Loop read_from_ddr.2 read_from_ddr.1_Loop read_from_ddr.1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_ output_results MLP 
+Execute       gen_rtl read_from_ddr_Loop_1 -style xilinx -f -lang vhdl -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/vhdl/a0_read_from_ddr_Loop_1 
+Execute       gen_rtl read_from_ddr_Loop_1 -style xilinx -f -lang vlog -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/verilog/a0_read_from_ddr_Loop_1 
+Execute       gen_tb_info read_from_ddr_Loop_1 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_Loop_1 -p /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db 
+Execute       report -model read_from_ddr_Loop_1 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_from_ddr_Loop_1_csynth.rpt -f 
+Execute       report -model read_from_ddr_Loop_1 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_from_ddr_Loop_1_csynth.xml -f -x 
+Execute       report -model read_from_ddr_Loop_1 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_Loop_1.verbose.rpt -verbose -f 
+Execute       db_write -model read_from_ddr_Loop_1 -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_Loop_1.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_from_ddr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model read_from_ddr -vendor xilinx -mg_file /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_from_ddr'.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 205.736 MB.
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute       gen_rtl read_from_ddr -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/systemc/a0_read_from_ddr -synmodules read_image_from_ddr_ read_image_from_ddr read_from_ddr.3_Loop read_from_ddr.3 read_from_ddr.2_Loop read_from_ddr.2 read_from_ddr.1_Loop read_from_ddr.1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_ output_results MLP 
+Execute       gen_rtl read_from_ddr -style xilinx -f -lang vhdl -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/vhdl/a0_read_from_ddr 
+Execute       gen_rtl read_from_ddr -style xilinx -f -lang vlog -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/verilog/a0_read_from_ddr 
+Execute       gen_tb_info read_from_ddr -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr -p /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db 
+Execute       report -model read_from_ddr -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_from_ddr_csynth.rpt -f 
+Execute       report -model read_from_ddr -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/read_from_ddr_csynth.xml -f -x 
+Execute       report -model read_from_ddr -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr.verbose.rpt -verbose -f 
+Execute       db_write -model read_from_ddr -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'output_results_Loop_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model output_results_Loop_ -vendor xilinx -mg_file /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results_Loop_s.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'output_results_Loop_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 206.045 MB.
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute       gen_rtl output_results_Loop_ -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/systemc/a0_output_results_Loop_s -synmodules read_image_from_ddr_ read_image_from_ddr read_from_ddr.3_Loop read_from_ddr.3 read_from_ddr.2_Loop read_from_ddr.2 read_from_ddr.1_Loop read_from_ddr.1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_ output_results MLP 
+Execute       gen_rtl output_results_Loop_ -style xilinx -f -lang vhdl -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/vhdl/a0_output_results_Loop_s 
+Execute       gen_rtl output_results_Loop_ -style xilinx -f -lang vlog -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/verilog/a0_output_results_Loop_s 
+Execute       gen_tb_info output_results_Loop_ -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results_Loop_s -p /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db 
+Execute       report -model output_results_Loop_ -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/output_results_Loop_s_csynth.rpt -f 
+Execute       report -model output_results_Loop_ -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/output_results_Loop_s_csynth.xml -f -x 
+Execute       report -model output_results_Loop_ -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results_Loop_s.verbose.rpt -verbose -f 
+Execute       db_write -model output_results_Loop_ -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results_Loop_s.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'output_results' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model output_results -vendor xilinx -mg_file /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'output_results'.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 206.453 MB.
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute       gen_rtl output_results -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/systemc/a0_output_results -synmodules read_image_from_ddr_ read_image_from_ddr read_from_ddr.3_Loop read_from_ddr.3 read_from_ddr.2_Loop read_from_ddr.2 read_from_ddr.1_Loop read_from_ddr.1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_ output_results MLP 
+Execute       gen_rtl output_results -style xilinx -f -lang vhdl -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/vhdl/a0_output_results 
+Execute       gen_rtl output_results -style xilinx -f -lang vlog -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/verilog/a0_output_results 
+Execute       gen_tb_info output_results -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results -p /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db 
+Execute       report -model output_results -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/output_results_csynth.rpt -f 
+Execute       report -model output_results -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/output_results_csynth.xml -f -x 
+Execute       report -model output_results -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results.verbose.rpt -verbose -f 
+Execute       db_write -model output_results -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MLP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model MLP -vendor xilinx -mg_file /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP/image_r' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP/l1_w' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP/l1_b' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP/l2_w' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP/l2_b' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP/out_r' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MLP' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'MLP_mac_muladd_8s_5ns_20ns_20_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_mac_muladd_8s_8ns_26ns_26_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MLP'.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 207.724 MB.
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute       gen_rtl MLP -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/systemc/a0_MLP -synmodules read_image_from_ddr_ read_image_from_ddr read_from_ddr.3_Loop read_from_ddr.3 read_from_ddr.2_Loop read_from_ddr.2 read_from_ddr.1_Loop read_from_ddr.1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_ output_results MLP 
+Execute       gen_rtl MLP -istop -style xilinx -f -lang vhdl -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/vhdl/a0_MLP 
+Execute       gen_rtl MLP -istop -style xilinx -f -lang vlog -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/verilog/a0_MLP 
+Execute       export_constraint_db -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.constraint.tcl -f -tool general 
+Execute       report -model MLP -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.design.xml -verbose -f -dv 
+Command       report done; 0.11 sec.
+Execute       report -model MLP -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.sdaccel.xml -verbose -f -sdaccel 
+Execute       gen_tb_info MLP -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP -p /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db 
+Execute       report -model MLP -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/MLP_csynth.rpt -f 
+Execute       report -model MLP -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/syn/report/MLP_csynth.xml -f -x 
+Execute       report -model MLP -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.verbose.rpt -verbose -f 
+Command       report done; 0.13 sec.
+Execute       db_write -model MLP -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.adb -f 
+Execute       sc_get_clocks MLP 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain MLP 
+INFO-FLOW: Model list for RTL component generation: read_image_from_ddr_ read_image_from_ddr read_from_ddr.3_Loop read_from_ddr.3 read_from_ddr.2_Loop read_from_ddr.2 read_from_ddr.1_Loop read_from_ddr.1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_ output_results MLP
+INFO-FLOW: Handling components in module [read_image_from_ddr_s] ... 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr_s.compgen.tcl 
+INFO-FLOW: Handling components in module [read_image_from_ddr] ... 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr.compgen.tcl 
+INFO-FLOW: Handling components in module [read_from_ddr_3_Loop] ... 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3_Loop.compgen.tcl 
+INFO-FLOW: Handling components in module [read_from_ddr_3] ... 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3.compgen.tcl 
+INFO-FLOW: Handling components in module [read_from_ddr_2_Loop] ... 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2_Loop.compgen.tcl 
+INFO-FLOW: Handling components in module [read_from_ddr_2] ... 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2.compgen.tcl 
+INFO-FLOW: Handling components in module [read_from_ddr_1_Loop] ... 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1_Loop.compgen.tcl 
+INFO-FLOW: Handling components in module [read_from_ddr_1] ... 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1.compgen.tcl 
+INFO-FLOW: Handling components in module [read_from_ddr_Loop_1] ... 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_Loop_1.compgen.tcl 
+INFO-FLOW: Handling components in module [read_from_ddr] ... 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr.compgen.tcl 
+INFO-FLOW: Handling components in module [output_results_Loop_s] ... 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results_Loop_s.compgen.tcl 
+INFO-FLOW: Handling components in module [output_results] ... 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results.compgen.tcl 
+INFO-FLOW: Handling components in module [MLP] ... 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.compgen.tcl 
+INFO-FLOW: Found component a0_MLP_mac_muladd_8s_8ns_26ns_26_1_1.
+INFO-FLOW: Append model a0_MLP_mac_muladd_8s_8ns_26ns_26_1_1
+INFO-FLOW: Found component a0_MLP_mac_muladd_8s_5ns_20ns_20_1_1.
+INFO-FLOW: Append model a0_MLP_mac_muladd_8s_5ns_20ns_20_1_1
+INFO-FLOW: Found component a0_MLP_image_buf.
+INFO-FLOW: Append model a0_MLP_image_buf
+INFO-FLOW: Found component a0_MLP_l1_w_buf.
+INFO-FLOW: Append model a0_MLP_l1_w_buf
+INFO-FLOW: Found component a0_MLP_l1_b_buf.
+INFO-FLOW: Append model a0_MLP_l1_b_buf
+INFO-FLOW: Found component a0_MLP_l1_output_buf.
+INFO-FLOW: Append model a0_MLP_l1_output_buf
+INFO-FLOW: Found component a0_MLP_l2_w_buf.
+INFO-FLOW: Append model a0_MLP_l2_w_buf
+INFO-FLOW: Found component a0_MLP_l2_b_buf.
+INFO-FLOW: Append model a0_MLP_l2_b_buf
+INFO-FLOW: Found component a0_MLP_out_buf.
+INFO-FLOW: Append model a0_MLP_out_buf
+INFO-FLOW: Append model read_image_from_ddr_s
+INFO-FLOW: Append model read_image_from_ddr
+INFO-FLOW: Append model read_from_ddr_3_Loop
+INFO-FLOW: Append model read_from_ddr_3
+INFO-FLOW: Append model read_from_ddr_2_Loop
+INFO-FLOW: Append model read_from_ddr_2
+INFO-FLOW: Append model read_from_ddr_1_Loop
+INFO-FLOW: Append model read_from_ddr_1
+INFO-FLOW: Append model read_from_ddr_Loop_1
+INFO-FLOW: Append model read_from_ddr
+INFO-FLOW: Append model output_results_Loop_s
+INFO-FLOW: Append model output_results
+INFO-FLOW: Append model MLP
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: a0_MLP_mac_muladd_8s_8ns_26ns_26_1_1 a0_MLP_mac_muladd_8s_5ns_20ns_20_1_1 a0_MLP_image_buf a0_MLP_l1_w_buf a0_MLP_l1_b_buf a0_MLP_l1_output_buf a0_MLP_l2_w_buf a0_MLP_l2_b_buf a0_MLP_out_buf read_image_from_ddr_s read_image_from_ddr read_from_ddr_3_Loop read_from_ddr_3 read_from_ddr_2_Loop read_from_ddr_2 read_from_ddr_1_Loop read_from_ddr_1 read_from_ddr_Loop_1 read_from_ddr output_results_Loop_s output_results MLP
+INFO-FLOW: To file: write model a0_MLP_mac_muladd_8s_8ns_26ns_26_1_1
+INFO-FLOW: To file: write model a0_MLP_mac_muladd_8s_5ns_20ns_20_1_1
+INFO-FLOW: To file: write model a0_MLP_image_buf
+INFO-FLOW: To file: write model a0_MLP_l1_w_buf
+INFO-FLOW: To file: write model a0_MLP_l1_b_buf
+INFO-FLOW: To file: write model a0_MLP_l1_output_buf
+INFO-FLOW: To file: write model a0_MLP_l2_w_buf
+INFO-FLOW: To file: write model a0_MLP_l2_b_buf
+INFO-FLOW: To file: write model a0_MLP_out_buf
+INFO-FLOW: To file: write model read_image_from_ddr_s
+INFO-FLOW: To file: write model read_image_from_ddr
+INFO-FLOW: To file: write model read_from_ddr_3_Loop
+INFO-FLOW: To file: write model read_from_ddr_3
+INFO-FLOW: To file: write model read_from_ddr_2_Loop
+INFO-FLOW: To file: write model read_from_ddr_2
+INFO-FLOW: To file: write model read_from_ddr_1_Loop
+INFO-FLOW: To file: write model read_from_ddr_1
+INFO-FLOW: To file: write model read_from_ddr_Loop_1
+INFO-FLOW: To file: write model read_from_ddr
+INFO-FLOW: To file: write model output_results_Loop_s
+INFO-FLOW: To file: write model output_results
+INFO-FLOW: To file: write model MLP
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr_s.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3_Loop.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2_Loop.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1_Loop.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_Loop_1.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results_Loop_s.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'a0_MLP_image_buf_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'a0_MLP_l1_w_buf_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'a0_MLP_l1_b_buf_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'a0_MLP_l1_output_buf_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'a0_MLP_l2_w_buf_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'a0_MLP_l2_b_buf_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'a0_MLP_out_buf_ram (RAM)' using distributed RAMs.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=MLP xml_exists=0
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.tbgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr_s.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3_Loop.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2_Loop.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1_Loop.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_Loop_1.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results_Loop_s.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr_s.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3_Loop.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2_Loop.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1_Loop.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_Loop_1.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results_Loop_s.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr_s.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3_Loop.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2_Loop.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1_Loop.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_Loop_1.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results_Loop_s.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.compgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.constraint.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=14
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=6
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=22 #gSsdmPorts=14
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.tbgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.tbgen.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_export -xo 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.constraint.tcl 
+Execute       sc_get_clocks MLP 
+Execute       source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 626.957 ; gain = 192.000 ; free physical = 4944 ; free virtual = 10494
+INFO: [SYSC 207-301] Generating SystemC RTL for MLP with prefix a0_.
+INFO: [VHDL 208-304] Generating VHDL RTL for MLP with prefix a0_.
+INFO: [VLOG 209-307] Generating Verilog RTL for MLP with prefix a0_.
+Command     autosyn done; 2.44 sec.
+Execute     get_part 
+Execute     get_config_export -sdx_tcl 
+Command   csynth_design done; 18.06 sec.
+Execute   export_design -ipname MLP 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -format 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -rtl 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -ipname=MLP 
+INFO-FLOW: DBG:CMD: export_design_wrap: -ipname MLP
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -sdx-target sds
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl both -sdx-target sds -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl both -sdx-target sds -tool Vivado -impltomg_flag
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr_s.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3_Loop.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2_Loop.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1_Loop.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_Loop_1.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results_Loop_s.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr_s.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3_Loop.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2_Loop.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1_Loop.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_Loop_1.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results_Loop_s.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr_s.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_image_from_ddr.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3_Loop.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_3.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2_Loop.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_2.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1_Loop.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_1.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr_Loop_1.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/read_from_ddr.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results_Loop_s.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/output_results.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.compgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.constraint.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=14
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=6
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=0 g_has_adaptors=false generate_bd_files=0 #modelList=22 #gSsdmPorts=14
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.tbgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.tbgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_export -xo 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.constraint.tcl 
+Execute     sc_get_clocks MLP 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -profile 
+Execute     ::config_rtl 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=14
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.tbgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.tbgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=MLP
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.tbgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.tbgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=MLP
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.rtl_wrap.cfg.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.tbgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.tbgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.tbgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.constraint.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.tbgen.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.constraint.tcl 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/MLP.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-rtl-files
+INFO-FLOW: DBG:CMD:       copy-tb-data-files
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO-FLOW: DBG:CMD: read_platform_lib /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/.autopilot/db/global.setting.tcl 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /tools/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:     exec /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/impl/ip/pack.sh
+Command   export_design done; 19.84 sec.
+Execute   cleanup_all 

@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Aug 14 15:48:55 2019
+# Process ID: 27148
+# Current directory: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/bare_m03_regslice_0_synth_1
+# Command line: vivado -log bare_m03_regslice_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bare_m03_regslice_0.tcl
+# Log file: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/bare_m03_regslice_0_synth_1/bare_m03_regslice_0.vds
+# Journal file: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/prj/prj.runs/bare_m03_regslice_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source bare_m03_regslice_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/iprepo/repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/tools/Xilinx/SDx/2018.3/data/ip/xilinx'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/SDx/2018.3/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/p0/vivado/.local/dsa/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/SDx/2018.3/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP bare_m03_regslice_0, cache-ID = fc8b5b83a6a4e0dd.
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 14 15:49:07 2019...

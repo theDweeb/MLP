@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:data xmlns:xd="http://www.xilinx.com/xd">
+  <xd:source name="pynqlib.c" compiler="gcc" objfile="/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/pynqlib.o" srcpath="/home/steve/Graduate_Research/MLP/PynqLib" flags="-I/home/steve/Graduate_Research/MLP/PynqLib -I/home/steve/Graduate_Research/MLP/inc -Wall -O3 -fPIC -D__HW__ -MMD -MP -D __SDSCC__" is_debug="0"/>
+</xd:data>

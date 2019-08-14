@@ -1,0 +1,55 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'MLP'" level="0">
+<item name = "Date">Wed Aug 14 15:39:39 2019
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">MLP</item>
+<item name = "Solution">solution</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 6.888, 2.70</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">317058, 317058, 317058, 317058, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_read_from_ddr_3_fu_307">read_from_ddr_3, 78402, 78402, 78403, 78403, dataflow</column>
+<column name="grp_read_image_from_ddr_fu_315">read_image_from_ddr, 786, 786, 787, 787, dataflow</column>
+<column name="grp_read_from_ddr_1_fu_323">read_from_ddr_1, 1002, 1002, 1003, 1003, dataflow</column>
+<column name="grp_read_from_ddr_2_fu_331">read_from_ddr_2, 102, 102, 103, 103, dataflow</column>
+<column name="grp_output_results_fu_339">output_results, 12, 12, 13, 13, dataflow</column>
+<column name="grp_read_from_ddr_fu_346">read_from_ddr, 12, 12, 13, 13, dataflow</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">235600, 235600, 2356, -, -, 100, no</column>
+<column name=" + Loop 1.1">2352, 2352, 3, -, -, 784, no</column>
+<column name="- Loop 2">3040, 3040, 304, -, -, 10, no</column>
+<column name=" + Loop 2.1">300, 300, 3, -, -, 100, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

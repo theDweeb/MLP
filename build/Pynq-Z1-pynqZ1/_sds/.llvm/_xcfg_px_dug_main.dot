@@ -1,0 +1,29 @@
+digraph defuse_graph {
+v0 [label = "v0:DEF:(  %83 = invoke i8* @sds_alloc(i32 784)
+          to label %84 unwind label %191, !dbg !14201)\nby SW(54)@74" ,style=filled];
+v1 [label = "v1:DEF:(  %85 = invoke i8* @sds_alloc(i32 78400)
+          to label %86 unwind label %191, !dbg !14204)\nby SW(75)@101" ,style=filled];
+v2 [label = "v2:DEF:(  %87 = invoke i8* @sds_alloc(i32 100)
+          to label %88 unwind label %191, !dbg !14207)\nby SW(81)@125" ,style=filled];
+v3 [label = "v3:DEF:(  %89 = invoke i8* @sds_alloc(i32 1000)
+          to label %90 unwind label %191, !dbg !14210)\nby SW(87)@141" ,style=filled];
+v4 [label = "v4:DEF:(  %91 = invoke i8* @sds_alloc(i32 10)
+          to label %92 unwind label %191, !dbg !14213)\nby SW(93)@165" ,style=filled];
+v5 [label = "v5:USE:(  %83 = invoke i8* @sds_alloc(i32 784)
+          to label %84 unwind label %191, !dbg !14201)\nby HW(MLP)@169" ,style=filled];
+v6 [label = "v6:USE:(  %85 = invoke i8* @sds_alloc(i32 78400)
+          to label %86 unwind label %191, !dbg !14204)\nby HW(MLP)@169" ,style=filled];
+v7 [label = "v7:USE:(  %87 = invoke i8* @sds_alloc(i32 100)
+          to label %88 unwind label %191, !dbg !14207)\nby HW(MLP)@169" ,style=filled];
+v8 [label = "v8:USE:(  %89 = invoke i8* @sds_alloc(i32 1000)
+          to label %90 unwind label %191, !dbg !14210)\nby HW(MLP)@169" ,style=filled];
+v9 [label = "v9:USE:(  %91 = invoke i8* @sds_alloc(i32 10)
+          to label %92 unwind label %191, !dbg !14213)\nby HW(MLP)@169" ,style=filled];
+v10 [label = "v10:DEF:(  %93 = invoke i8* @sds_alloc(i32 10)
+          to label %94 unwind label %191, !dbg !14216)\nby HW(MLP)@169" ,style=filled];
+v4 -> v9;
+v3 -> v8;
+v2 -> v7;
+v1 -> v6;
+v0 -> v5;
+}

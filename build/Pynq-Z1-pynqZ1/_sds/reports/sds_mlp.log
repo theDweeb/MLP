@@ -1,0 +1,386 @@
+(c) Copyright 2012-2018 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2018.3 SW Build 2405991 on Thu Dec  6 23:37:15 MST 2018
+# Start time    : Wed Aug 14 15:39:13 EDT 2019
+# Command line  : sds++ -sds-pf /home/steve/Graduate_Research/MLP/Pynq-Z1/platforms/pynqZ1 -target-os linux -Wall -O3 -c -fPIC -I/home/steve/Graduate_Research/MLP/inc/ -D__HW__ -MT/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.o -MMD -MP -MF/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.d -MT/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.o -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.o /home/steve/Graduate_Research/MLP/src/mlp.cpp -sds-hw MLP mlp.cpp -clkid 0 -sds-end
+# Log file      : /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/reports/sds_mlp.log
+# Journal file  : /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/reports/sds_mlp.jou
+# Report file   : /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/reports/sds_mlp.rpt
+#-----------------------------------------------------------
+
+Analyzing source for RTL template usage
+/tools/Xilinx/SDx/2018.3/bin/rtl_template_extract  /home/steve/Graduate_Research/MLP/src/mlp.cpp  -save-query /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.rtlx  --  -c  -I/home/steve/Graduate_Research/MLP/inc/  -Wall -fPIC -D__HW__ -MMD -MP -D __SDSCC__  
+    -target arm-linux-gnueabihf -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -O0 -g -w      -I /tools/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include   -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1 -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1/arm-linux-gnueabihf -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1/backward -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/7.3.1/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/7.3.1/include-fixed -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include  -std=c++11
+Create data motion intermediate representation
+/tools/Xilinx/SDx/2018.3/bin/clang_wrapper  -I/home/steve/Graduate_Research/MLP/inc/  -Wall -fPIC -D__HW__ -MMD -MP -D __SDSCC__  -target arm-linux-gnueabihf -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -O0 -g       -I /tools/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include   -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1 -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1/arm-linux-gnueabihf -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1/backward -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/7.3.1/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/7.3.1/include-fixed -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include  -std=c++11  -emit-llvm -S /home/steve/Graduate_Research/MLP/src/mlp.cpp -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.s
+Performing accelerator source linting for MLP
+/tools/Xilinx/SDx/2018.3/bin/sdslint -target cortex-a9 -func "MLP" /home/steve/Graduate_Research/MLP/src/mlp.cpp -- -c -I/home/steve/Graduate_Research/MLP/inc/ -Wall -fPIC -D__HW__ -MMD -MP -D __SDSCC__ -target arm-linux-gnueabihf -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -O0 -g -w      -I /tools/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include   -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1 -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1/arm-linux-gnueabihf -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1/backward -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/7.3.1/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/7.3.1/include-fixed -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include  -std=c++11
+arm-linux-gnueabihf-g++ -c /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.cpp -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.o
+arm-linux-gnueabihf-objcopy --add-section .xdinfo=/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.o.xml /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.o
+Performing pragma generation
+/tools/Xilinx/SDx/2018.3/bin/clang_wrapper -E -I/home/steve/Graduate_Research/MLP/inc -Wall -fPIC -D__HW__ -MMD -MP -D __SDSCC__ -m32 -D HLS_NO_XIL_FPO_LIB -I /tools/Xilinx/SDx/2018.3/target/aarch32-linux/include -I/home/steve/Graduate_Research/MLP/src -D __SDSVHLS__ -target arm-linux-gnueabihf -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -O0 -g -w      -I /tools/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include   -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1 -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1/arm-linux-gnueabihf -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1/backward -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/7.3.1/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/7.3.1/include-fixed -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include  -std=c++11 /home/steve/Graduate_Research/MLP/src/mlp.cpp -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/mlp_pp.cpp
+/tools/Xilinx/SDx/2018.3/bin/pragma_gen  -func "MLP"   -tcl /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP.tcl   /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/mlp_pp.cpp -multi_aximm   --  -c  -D __SDSVHLS__ -I/home/steve/Graduate_Research/MLP/inc -Wall -O3 -fPIC -D__HW__ -MMD -MP -D __SDSCC__ -m32      -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/SDx/2018.3/target/aarch32-linux/include -I/home/steve/Graduate_Research/MLP/src  -target arm-linux-gnueabihf -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -O0 -g -w      -I /tools/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include   -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1 -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1/arm-linux-gnueabihf -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/7.3.1/backward -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/7.3.1/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/7.3.1/include-fixed -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include  -std=c++11
+INFO: [PragmaGen 83-3231] Successfully generated tcl script: /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP.tcl
+Moving function MLP to Programmable Logic
+/tools/Xilinx/Vivado/2018.3/bin/vivado_hls /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP_run.tcl -l MLP_vivado_hls.log
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vivado/2018.3/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'steve' on host 'Steven-F' (Linux_x86_64 version 4.15.0-55-generic) on Wed Aug 14 15:39:22 EDT 2019
+INFO: [HLS 200-10] On os Ubuntu 16.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls'
+INFO: [HLS 200-10] Creating and opening project '/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP'.
+INFO: [HLS 200-10] Adding design file '/home/steve/Graduate_Research/MLP/src/mlp.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution '/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-10] Setting target device to ' xc7z020clg400-1 '
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=0
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_phys_opt=none
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_bind -effort=medium
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_schedule -effort=medium
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_schedule -relax_ii_for_timing=0
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_rtl -auto_prefix=1
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty 27%
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2.7ns.
+INFO: [HLS 200-10] Analyzing design file '/home/steve/Graduate_Research/MLP/src/mlp.cpp' ... 
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/steve/Graduate_Research/MLP/src/mlp-util.hpp:9:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/steve/Graduate_Research/MLP/src/mlp-util.hpp:19:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/steve/Graduate_Research/MLP/src/mlp-util.hpp:29:2
+WARNING: [HLS 200-471] Dataflow form checks found 3 issue(s) in file /home/steve/Graduate_Research/MLP/src/mlp.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 435.074 ; gain = 0.117 ; free physical = 5173 ; free virtual = 10709
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 435.074 ; gain = 0.117 ; free physical = 5173 ; free virtual = 10710
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 435.102 ; gain = 0.145 ; free physical = 5152 ; free virtual = 10690
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fullyConnected.1' into 'MLP' (/home/steve/Graduate_Research/MLP/src/mlp.cpp:45) automatically.
+INFO: [XFORM 203-602] Inlining function 'fullyConnected' into 'MLP' (/home/steve/Graduate_Research/MLP/src/mlp.cpp:46) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 563.102 ; gain = 128.145 ; free physical = 5159 ; free virtual = 10690
+INFO: [XFORM 203-602] Inlining function 'fullyConnected.1' into 'MLP' (/home/steve/Graduate_Research/MLP/src/mlp.cpp:45) automatically.
+INFO: [XFORM 203-602] Inlining function 'fullyConnected' into 'MLP' (/home/steve/Graduate_Research/MLP/src/mlp.cpp:46) automatically.
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:9) to a process function for dataflow in function 'read_image_from_ddr'.
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:19) to a process function for dataflow in function 'read_from_ddr.3'.
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:19) to a process function for dataflow in function 'read_from_ddr.2'.
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:19) to a process function for dataflow in function 'read_from_ddr.1'.
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:19) to a process function for dataflow in function 'read_from_ddr'.
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:29) to a process function for dataflow in function 'output_results'.
+INFO: [XFORM 203-712] Applying dataflow to function 'read_image_from_ddr', detected/extracted 1 process function(s): 
+	 'read_image_from_ddr_Loop_1_proc'.
+INFO: [XFORM 203-712] Applying dataflow to function 'read_from_ddr.3', detected/extracted 1 process function(s): 
+	 'read_from_ddr.3_Loop_1_proc'.
+INFO: [XFORM 203-712] Applying dataflow to function 'read_from_ddr.2', detected/extracted 1 process function(s): 
+	 'read_from_ddr.2_Loop_1_proc'.
+INFO: [XFORM 203-712] Applying dataflow to function 'read_from_ddr.1', detected/extracted 1 process function(s): 
+	 'read_from_ddr.1_Loop_1_proc'.
+INFO: [XFORM 203-712] Applying dataflow to function 'read_from_ddr', detected/extracted 1 process function(s): 
+	 'read_from_ddr_Loop_1_proc'.
+INFO: [XFORM 203-712] Applying dataflow to function 'output_results', detected/extracted 1 process function(s): 
+	 'output_results_Loop_1_proc'.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 563.102 ; gain = 128.145 ; free physical = 5109 ; free virtual = 10646
+WARNING: [XFORM 203-631] Renaming function 'read_image_from_ddr_Loop_1_proc' to 'read_image_from_ddr_' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:9:28)
+WARNING: [XFORM 203-631] Renaming function 'read_from_ddr_Loop_1_proc' to 'read_from_ddr_Loop_1' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:19:28)
+WARNING: [XFORM 203-631] Renaming function 'read_from_ddr.3_Loop_1_proc' to 'read_from_ddr.3_Loop' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:19:28)
+WARNING: [XFORM 203-631] Renaming function 'read_from_ddr.2_Loop_1_proc' to 'read_from_ddr.2_Loop' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:19:28)
+WARNING: [XFORM 203-631] Renaming function 'read_from_ddr.1_Loop_1_proc' to 'read_from_ddr.1_Loop' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:19:28)
+WARNING: [XFORM 203-631] Renaming function 'output_results_Loop_1_proc' to 'output_results_Loop_' (/home/steve/Graduate_Research/MLP/src/mlp-util.hpp:29:26)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 626.957 ; gain = 192.000 ; free physical = 5008 ; free virtual = 10545
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MLP' ...
+WARNING: [SYN 201-103] Legalizing function name 'read_image_from_ddr_' to 'read_image_from_ddr_s'.
+WARNING: [SYN 201-103] Legalizing function name 'read_from_ddr.3_Loop' to 'read_from_ddr_3_Loop'.
+WARNING: [SYN 201-103] Legalizing function name 'read_from_ddr.3' to 'read_from_ddr_3'.
+WARNING: [SYN 201-103] Legalizing function name 'read_from_ddr.2_Loop' to 'read_from_ddr_2_Loop'.
+WARNING: [SYN 201-103] Legalizing function name 'read_from_ddr.2' to 'read_from_ddr_2'.
+WARNING: [SYN 201-103] Legalizing function name 'read_from_ddr.1_Loop' to 'read_from_ddr_1_Loop'.
+WARNING: [SYN 201-103] Legalizing function name 'read_from_ddr.1' to 'read_from_ddr_1'.
+WARNING: [SYN 201-103] Legalizing function name 'output_results_Loop_' to 'output_results_Loop_s'.
+WARNING: [SYN 201-107] Renaming port name 'MLP/image' to 'MLP/image_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'MLP/out' to 'MLP/out_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_image_from_ddr_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 16.76 seconds; current allocated memory: 200.019 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 200.112 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_image_from_ddr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 200.161 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 200.206 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_from_ddr_3_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 200.270 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 200.392 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_from_ddr_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 200.409 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0 seconds; current allocated memory: 200.455 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_from_ddr_2_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 200.519 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 200.604 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_from_ddr_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 200.637 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 200.682 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_from_ddr_1_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 200.731 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 200.816 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_from_ddr_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 200.833 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 200.879 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_from_ddr_Loop_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 200.944 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 201.029 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_from_ddr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 201.046 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0 seconds; current allocated memory: 201.091 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'output_results_Loop_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 201.143 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 201.233 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'output_results' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 201.266 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 201.311 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MLP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-71] Latency directive discarded for region MLP since it contains subloops.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 201.727 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 4 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 202.172 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_image_from_ddr_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_image_from_ddr_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 202.462 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_image_from_ddr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_image_from_ddr'.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 202.916 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_from_ddr_3_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_from_ddr_3_Loop'.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 203.229 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_from_ddr_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_from_ddr_3'.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 203.610 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_from_ddr_2_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_from_ddr_2_Loop'.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 203.952 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_from_ddr_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_from_ddr_2'.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 204.343 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_from_ddr_1_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_from_ddr_1_Loop'.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 204.627 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_from_ddr_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_from_ddr_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 205.032 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_from_ddr_Loop_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_from_ddr_Loop_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 205.331 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_from_ddr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_from_ddr'.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 205.736 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'output_results_Loop_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'output_results_Loop_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 206.045 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'output_results' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'output_results'.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 206.453 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MLP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP/image_r' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP/l1_w' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP/l1_b' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP/l2_w' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP/l2_b' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP/out_r' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MLP' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'MLP_mac_muladd_8s_5ns_20ns_20_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_mac_muladd_8s_8ns_26ns_26_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MLP'.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 207.724 MB.
+INFO: [RTMG 210-278] Implementing memory 'a0_MLP_image_buf_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'a0_MLP_l1_w_buf_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'a0_MLP_l1_b_buf_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'a0_MLP_l1_output_buf_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'a0_MLP_l2_w_buf_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'a0_MLP_l2_b_buf_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'a0_MLP_out_buf_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 626.957 ; gain = 192.000 ; free physical = 4944 ; free virtual = 10494
+INFO: [SYSC 207-301] Generating SystemC RTL for MLP with prefix a0_.
+INFO: [VHDL 208-304] Generating VHDL RTL for MLP with prefix a0_.
+INFO: [VLOG 209-307] Generating Verilog RTL for MLP with prefix a0_.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 14 15:40:00 2019...
+INFO: [HLS 200-112] Total elapsed time: 38.95 seconds; peak allocated memory: 207.724 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Wed Aug 14 15:40:00 2019...
+/bin/sed -i -e {s/xilinx\.com\/xidane/xilinx\.com\/xd/g} /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/impl/ip/auxiliary.xml
+/tools/Xilinx/SDx/2018.3/bin/xsltproc  --output /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.llvm/MLP.hlsmap1.xml  --stringparam P_CLKID 0  --stringparam P_HLS_TYPE hls   /tools/Xilinx/SDx/2018.3/scripts/xsd/xdHlsmapRenameAttr.xsl  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.llvm/MLP_auxiliary.xml
+/tools/Xilinx/SDx/2018.3/bin/xsltproc  --output /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.llvm/MLP.hlsmap.xml  /tools/Xilinx/SDx/2018.3/scripts/xsd/xdHlsmapAdapter.xsl  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.llvm/MLP.hlsmap1.xml
+/tools/Xilinx/SDx/2018.3/bin/xsltproc    --output /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.llvm/MLP.fcnmap.xml  /tools/Xilinx/SDx/2018.3/scripts/xsd/xdHlsmapAxi4.xsl  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.llvm/MLP.hlsmap.xml
+/tools/Xilinx/SDx/2018.3/bin/xsltproc  --output /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.llvm/MLP_if.xml  --stringparam P_ADAPTER_COMPREF adapter_v3_0  /tools/Xilinx/SDx/2018.3/scripts/xsd/xdHlsAdapterComp.xsl  /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.llvm/MLP.fcnmap.xml
+arm-linux-gnueabihf-objcopy --add-section .xddata=/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/MLP.xml /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.o
+arm-linux-gnueabihf-objcopy --add-section .xdasm=/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.s /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.o
+arm-linux-gnueabihf-g++ -E -I/home/steve/Graduate_Research/MLP/inc/ -Wall -O3 -fPIC -D__HW__ -MMD -MP -D __SDSCC__ -MT/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.o -MF/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.d -MT/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/mlp.o       -I /tools/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include /home/steve/Graduate_Research/MLP/src/mlp.cpp -o /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.pp/mlp.iix
+arm-linux-gnueabihf-objcopy --add-section .xdpp=/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.pp/mlp.ii /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.o
+arm-linux-gnueabihf-objcopy --add-section .xdfcnmap=/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.llvm/MLP.fcnmap.xml /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.o
+arm-linux-gnueabihf-objcopy --add-section .xdhlscore=/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/vhls/MLP/solution/impl/ip/xilinx_com_hls_MLP_1_0.zip /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.o
+arm-linux-gnueabihf-objcopy --add-section .xdif=/home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/.llvm/MLP_if.xml /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/swstubs/mlp.o
+sds++ log file saved as /home/steve/Graduate_Research/MLP/build/Pynq-Z1-pynqZ1/_sds/reports/sds_mlp.log
+sds++ completed at Wed Aug 14 15:40:01 EDT 2019
