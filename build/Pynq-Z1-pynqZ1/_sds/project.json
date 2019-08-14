@@ -1,8 +1,0 @@
-{
-  "project" : {
-    "id" : "0",
-    "xpfmFile" : "/home/steve/Graduate_Research/MLP/Pynq-Z1/platforms/pynqZ1/pynqZ1.xpfm",
-    "sysConfig" : "linux",
-    "accelerators" : "MLP"
-  }
-}

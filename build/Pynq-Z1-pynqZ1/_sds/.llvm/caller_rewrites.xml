@@ -1,4 +1,0 @@
-<?xml version="1.0"?>
-<xd:XidanePass xd:num_rewrites="1" xmlns:xd="http://www.xilinx.com/xd">
-  <xd:caller xd:no="0" xd:file="/home/steve/Graduate_Research/MLP/src/host.cpp" xd:rewrite="caller0.cfrewrite"/>
-</xd:XidanePass>

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xd:data xmlns:xd="http://www.xilinx.com/xd">
-  <xd:accel name="MLP" platform="pynqZ1" compiler="g++" srcfile="mlp.cpp" srcpath="/home/steve/Graduate_Research/MLP/src" flags="-I/home/steve/Graduate_Research/MLP/src -I/home/steve/Graduate_Research/MLP/inc -Wall -O3 -fPIC -D__HW__ -MMD -MP -D __SDSCC__" is_debug="0" clk_id="0" ip_requires_adapter="1" ip_is_rtl="0" ip_has_repo="0" ip_has_debugxrf="0" ip_is_pfunc="0" ip_is_rtl_template="0" vlnv="" is_opencl="0" asmfile="mlp.s" esc_original_name="MLP" template_source_file="NA"/>
-</xd:data>

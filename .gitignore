@@ -4,16 +4,19 @@
 
 build/_sds
 build/.Xil
-build/Ultra*
-build/host
+build/Pynq-Z1*
+build/host*
+build/sd_card
+build/mlp*
+build/pynq*
 
 .build/
 data_backup/
 data_backup
 .Xil/
 .vscode/
-Ultra96/hw
-Ultra96/platforms/
+Pynq-Z1/hw
+Pynq-Z1/platforms/
 data/
 vivado.jou
 vivado.log
