@@ -1,7 +1,14 @@
+#include "mlp_config.h"
+
 #ifndef __HEADER_MLP__
 #define __HEADER_MLP__
 
-#include "mlp_config.h"
+#ifdef __HW__
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+#endif
 
 #pragma SDS data access_pattern( \
     image                        \
@@ -53,12 +60,18 @@
       out                       \
     : PHYSICAL_CONTIGUOUS)
 
-void MLP(
-    dImage_ *image,
-    dType_ *l1_w,
-    dType_ *l1_b,
-    dType_ *l2_w,
-    dType_ *l2_b,
-    dImage_ *out);
+  void MLP(
+      dImage_ *image,
+      dType_ *l1_w,
+      dType_ *l1_b,
+      dType_ *l2_w,
+      dType_ *l2_b,
+      dImage_ *out);
+
+#ifdef __HW__
+#ifdef __cplusplus
+}
+#endif
+#endif
 
 #endif
