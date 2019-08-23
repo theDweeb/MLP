@@ -1,7 +1,7 @@
 /build/host
 /MNIST-for-Numpy/*ubyte.gz
 *.txt
-
+testbench/host
 build/_sds
 build/.Xil
 build/Pynq-Z1*
