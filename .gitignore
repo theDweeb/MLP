@@ -6,7 +6,7 @@ build/_sds
 build/.Xil
 build/Ultra*
 build/host
-
+testbench/host
 .build/
 data_backup/
 data_backup
