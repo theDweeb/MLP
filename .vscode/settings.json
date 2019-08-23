@@ -44,6 +44,15 @@
         "cinttypes": "cpp",
         "cstddef": "cpp",
         "optional": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "cstdarg": "cpp",
+        "atomic": "cpp",
+        "strstream": "cpp",
+        "algorithm": "cpp",
+        "iterator": "cpp",
+        "map": "cpp",
+        "memory_resource": "cpp",
+        "random": "cpp",
+        "regex": "cpp"
     }
 }
