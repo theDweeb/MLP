@@ -1,10 +1,6 @@
 #include "mlp.h"
 #include "npy.hpp"
 
-#ifndef __HW__
-#include <fstream>
-#endif
-
 int main(int argc, char **argv)
 {
 #ifdef __HW__
@@ -66,7 +62,7 @@ int main(int argc, char **argv)
     file.open("image.txt");
 #endif
 
-    // Convert image from int32 to uint8
+    // Convert image from int32 to uint8 (0-255)
     for (int i = 0; i < __IMG_ROWS__; i++)
     {
         for (int j = 0; j < __IMG_COLS__; j++)
@@ -90,16 +86,30 @@ int main(int argc, char **argv)
     {
         for (int j = 0; j < __L1_COLS__; j++)
         {
-            if (l1_w[(i * __L1_COLS__) + j] <= -1)
+            // Check to see if it is positive or negative (max or min)
+            // If it is negative, multiply by the minimum value
+            if (l1_w[(i * __L1_COLS__) + j] < 0)
             {
-                l1_w[(i * __L1_COLS__) + j] = -1;
+                l1_w_q[(i * __L1_COLS__) + j] = (dType_)((-1) * l1_w[(i * __L1_COLS__) + j] * __QUANT_MIN__);
+                // If it is less than the quantized minumum value, set it equal to the minimum value
+                if (l1_w_q[(i * __L1_COLS__) + j] < __QUANT_MIN__)
+                {
+                    l1_w_q[(i * __L1_COLS__) + j] = (dType_)__QUANT_MIN__;
+                }
             }
-            else if (l1_w[(i * __L1_COLS__) + j] >= 1)
+            // Else if it is a positive number
+            // Multiply it by the quantized maxiumum value
+            else if (l1_w[(i * __L1_COLS__) + j] > 0)
             {
-                l1_w[(i * __L1_COLS__) + j] = 1;
+                l1_w_q[(i * __L1_COLS__) + j] = (dType_)(l1_w[(i * __L1_COLS__) + j] * __QUANT_MAX__);
+                // If it is greater than the quantized maximum value, set it equal to the maximum value
+                if (l1_w_q[(i * __L1_COLS__) + j] > __QUANT_MAX__)
+                {
+                    l1_w_q[(i * __L1_COLS__) + j] = (dType_)__QUANT_MAX__;
+                }
             }
-            l1_w_q[(i * __L1_COLS__) + j] = l1_w[(i * __L1_COLS__) + j] * 16;
 #ifndef __HW__
+            // Write it to a text file (for visualization of data)
             file << (int)l1_w_q[(i * __L1_COLS__) + j] << " ";
 #endif
         }
@@ -114,15 +124,22 @@ int main(int argc, char **argv)
     // Layer 1 bias
     for (int i = 0; i < __L1_B__; i++)
     {
-        if (l1_b[i] <= -1)
+        if (l1_b[i] < 0)
         {
-            l1_b[i] = -1;
+            l2_b_q[i] = (dType_)((-1) * l1_b[i] * __QUANT_MIN__);
+            if (l1_b_q[i] < __QUANT_MIN__)
+            {
+                l1_b_q[i] = (dType_)__QUANT_MIN__;
+            }
         }
-        else if (l1_b[i] >= 1)
+        else if (l1_b[i] > 0)
         {
-            l1_b[i] = 1;
+            l1_b_q[i] = l1_b[i] * __QUANT_MAX__;
+            if (l1_b_q[i] > __QUANT_MAX__)
+            {
+                l1_b_q[i] = (dType_)__QUANT_MAX__;
+            }
         }
-        l1_b_q[i] = l1_b[i] * 16;
     }
 
     // Layer 2 weights
@@ -130,15 +147,28 @@ int main(int argc, char **argv)
     {
         for (int j = 0; j < __L2_COLS__; j++)
         {
-            if (l2_w[(i * __L2_COLS__) + j] <= -1)
+            // Check to see if it is positive or negative (max or min)
+            // If it is negative, multiply by the minimum value
+            if (l2_w[(i * __L2_COLS__) + j] < 0)
             {
-                l2_w[(i * __L2_COLS__) + j] = -1;
+                l2_w_q[(i * __L2_COLS__) + j] = (dType_)((-1) * l2_w[(i * __L2_COLS__) + j] * __QUANT_MIN__);
+                // If it is less than the quantized minumum value, set it equal to the minimum value
+                if (l2_w_q[(i * __L2_COLS__) + j] < __QUANT_MIN__)
+                {
+                    l2_w_q[(i * __L2_COLS__) + j] = (dType_)__QUANT_MIN__;
+                }
             }
-            else if (l2_w[(i * __L2_COLS__) + j] >= 1)
+            // Else if it is a positive number
+            // Multiply it by the quantized maxiumum value
+            else if (l2_w[(i * __L2_COLS__) + j] > 0)
             {
-                l2_w[(i * __L2_COLS__) + j] = 1;
+                l2_w_q[(i * __L2_COLS__) + j] = (dType_)(l2_w[(i * __L2_COLS__) + j] * __QUANT_MAX__);
+                // If it is greater than the quantized maximum value, set it equal to the maximum value
+                if (l2_w_q[(i * __L2_COLS__) + j] > __QUANT_MAX__)
+                {
+                    l2_w_q[(i * __L2_COLS__) + j] = (dType_)__QUANT_MAX__;
+                }
             }
-            l2_w_q[(i * __L2_COLS__) + j] = l2_w[(i * __L2_COLS__) + j] * 16;
 #ifndef __HW__
             file << (int)l2_w_q[(i * __L2_COLS__) + j] << " ";
 #endif
@@ -149,20 +179,27 @@ int main(int argc, char **argv)
     }
 
 #ifndef __HW__
-    file.close();
+    //file.close();
 #endif
     // Layer 2 bias
     for (int i = 0; i < __L2_B__; i++)
     {
-        if (l2_b[i] <= -1)
+        if (l2_b[i] < 0)
         {
-            l2_b[i] = -1;
+            l2_b_q[i] = (dType_)((-1) * l2_b[i] * __QUANT_MIN__);
+            if (l2_b_q[i] < __QUANT_MIN__)
+            {
+                l2_b_q[i] = (dType_)__QUANT_MIN__;
+            }
         }
-        else if (l2_b[i] >= 1)
+        else if (l2_b[i] > 0)
         {
-            l2_b[i] = 1;
+            l2_b_q[i] = l2_b[i] * __QUANT_MAX__;
+            if (l2_b_q[i] > __QUANT_MAX__)
+            {
+                l2_b_q[i] = (dType_)__QUANT_MAX__;
+            }
         }
-        l2_b_q[i] = l2_b[i] * 16;
     }
 
 #ifdef __HW__
@@ -170,27 +207,15 @@ int main(int argc, char **argv)
 #else
     MLP(image_q.data(), l1_w_q.data(), l1_b_q.data(), l2_w_q.data(), l2_b_q.data(), results.data());
 
+    std::cout << "Quantized weight range:" << std::endl;
+    std::cout << "(" << __QUANT_MIN__ << "," << __QUANT_MAX__ << ") " << __QUANTIZATION__ << " bit" << std::endl;
+
     std::cout << "Results:" << std::endl;
-    std::cout << "digit\tprobability\n";
+    std::cout << "digit\tconfidence\n";
     for (int i = 0; i < __OUT_SIZE__; i++)
     {
         float result = results[i];
-        std::cout << i << "\t" << float((result / 16) * 100) << "%" << std::endl;
+        std::cout << i << "\t" << float(100 * (result/(__QUANT_MAX__ + 1))) << "%" << std::endl;
     }
-
-    size_t image_size = sizeof(dImage_) * __IMG_SIZE__;
-    size_t l1_w_size = sizeof(dType_) * __L1_W__;
-    size_t l1_b_size = sizeof(dType_) * __L1_B__;
-    size_t l1_output = sizeof(dImage_) * __L1_ROWS__;
-    size_t l2_w_size = sizeof(dType_) * __L2_W__;
-    size_t l2_b_size = sizeof(dType_) * __L2_B__;
-    size_t results_size = sizeof(dImage_) * __OUT_SIZE__;
-
-    float hls_size = image_size + l1_w_size + l1_output + l1_b_size + l2_w_size + l2_b_size + results_size;
-    float ultra_size = 7.6 * (1000000 / 8);
-    std::cout << "Ultra96 BRAM size: 7.6Mb" << std::endl;
-    std::cout << "MLP size: " << hls_size / 1000 << "kB" << std::endl;
-    std::cout << "Utilization: " <<( hls_size / ultra_size) * 100 << "%" << std::endl;
-
 #endif
 }

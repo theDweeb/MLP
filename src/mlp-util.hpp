@@ -66,9 +66,9 @@ void fullyConnected(dImage_ *input, dType_ weights[__L1_W__], dType_ *bias, dIma
         {
             sum = 0;
         }
-        if (sum > 16)
+        if (sum > __QUANT_MAX__)
         {
-            sum = 16;
+            sum = __QUANT_MAX__;
         }
         output[i] = sum;
     }
