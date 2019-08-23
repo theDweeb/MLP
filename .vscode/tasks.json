@@ -14,7 +14,7 @@
                 "${fileDirname}/mlp.cpp",
                 "${fileDirname}/host.cpp",
                 "-o",
-                "${fileDirname}/../build/host"
+                "${fileDirname}/../testbench/host"
             ],
             "options": {
                 "cwd": "/usr/bin"
